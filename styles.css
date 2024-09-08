@@ -1,0 +1,355 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Search Bar Styles */
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Margin at the top */
+}
+
+.search-bar {
+    width: 50%;
+    max-width: 800px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: right; /* Align text to the right */
+}
+
+/* Box 1: Filter Area 1 Styles */
+.box-1-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Margin below the search bar */
+}
+
+.filter-area-1 {
+    width: 80%; /* Smaller width for Box 1 */
+    display: flex;
+    flex-direction: row; /* Horizontal layout for buttons */
+    gap: 10px; /* Space between buttons */
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 15px;
+    justify-content: center; /* Center buttons horizontally */
+}
+
+.filter-area-1 .filter-button {
+    flex: 1; /* Equal width buttons */
+    background-color: #007bff;
+    margin: 0; /* Remove any default margins */
+    width: 100%; /* Ensure buttons take full width of their container */
+}
+
+.filter-area-1 .filter-button:hover {
+    background-color: #0056b3;
+}
+
+/* Main Content and Right Side Styles */
+.container {
+    display: flex;
+    width: 1200px;
+    height: 550px;
+    margin-top: 20px; /* Space below Box 1 */
+}
+
+.content-container {
+    width: 75%;
+    height: 90%; /* Use full height of the container */
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Add padding to content area */
+}
+
+/* Image Container Styles */
+.content-area {
+    display: flex;
+    flex-direction: row; /* Display images from right to left */
+    flex-wrap: wrap; /* Allow wrapping of images if necessary */
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Space between images */
+}
+
+.image-container {
+    position: relative;
+    width: 150px; /* Set desired width */
+    height: 150px; /* Set desired height */
+    overflow: hidden; /* Ensure images do not overflow the container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Scale up image on hover */
+    cursor: pointer;
+}
+
+.image-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions for transform and background-color */
+}
+
+.image-container:hover .image-label {
+    transform: scale(1.05); /* Scale up label on hover */
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+}
+
+/* Modal Window Styles */
+/* Modal Window Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto; /* Centered horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Set width as needed */
+    max-width: 400px; /* Maximum width */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+}
+
+.modal-image {
+    width: 100%; /* Ensure the image takes full width of the modal */
+    max-width: 250px; /* Set a maximum width for the image */
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add margin below */
+    border-radius: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.right-side {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between elements in the right side */
+}
+
+/* Selected Filters Box */
+.selected-filter-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #eaeaea;
+    border-radius: 15px;
+}
+
+.selected-filter-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between selected filter items */
+    justify-content: center; /* Center selected filter items */
+}
+
+.selected-filter-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center; /* Center text in selected filter items */
+}
+
+.selected-filter-item span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.filter-clear-button {
+    border: none;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-clear-button:hover {
+    background-color: #cc0000;
+}
+
+/* Box 2: Filter Area 2 Styles */
+.filter-area-box {
+    width: 100%;
+}
+
+.filter-area-2 {
+    width: 100%; /* Bigger width for Box 2 */
+    display: flex;
+    flex-direction: column; /* Vertical layout for buttons */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    align-items: center; /* Center buttons vertically */
+}
+
+.filter-area-2 .filter-button {
+    background-color: #28a745;
+    margin-bottom: 10px; /* Space between buttons */
+    text-align: center; /* Center text in buttons */
+    width: 100%; /* Ensure buttons take full width of their container */
+}
+
+.filter-area-2 .filter-button:hover {
+    background-color: #1e7e34;
+}
+
+/* General Filter Button Styles */
+.filter-button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    /* Hover effects are handled individually for Box 1 and Box 2 */
+}
+
+.clear-all-button {
+    padding: 5px 5px;
+    border: none;
+    background-color: #dc3545; /* A red color */
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 5px; /* Add some space above the button */
+}
+
+.clear-all-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.content-item img {
+    max-width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: for rounded corners */
+}
+
+/* Me Box Styles */
+.me-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+
+.me-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.me-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add this to your existing CSS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.image-container {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.image-container.fade-in {
+    animation-name: fadeIn;
+}
+
+.image-container.fade-out {
+    animation-name: fadeOut;
+}
