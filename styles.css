@@ -128,9 +128,8 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions for transform and background-color */
 }
 
-.image-container:hover .image-label {
+.image-container:hover {
     transform: scale(1.05); /* Scale up label on hover */
-    background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
 }
 
 /* Modal Window Styles */
@@ -160,27 +159,29 @@ body {
     position: relative;
 }
 
-.modal-image {
-    width: 100%; /* Ensure the image takes full width of the modal */
-    max-width: 250px; /* Set a maximum width for the image */
-    display: block;
-    margin: 0 auto 20px; /* Center the image and add margin below */
+#modalImage {
+    max-width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.image-container {
+    display: inline-block;
+    margin: 10px;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+.image-container img {
     cursor: pointer;
+    width: 150px;  /* Fixed width */
+    height: 150px; /* Fixed height */
 }
+
+.image-label {
+    text-align: center;
+    margin-top: 10px; /* Add margin between image and label */
+}
+
+
 .right-side {
     width: 25%;
     display: flex;
@@ -352,4 +353,84 @@ body {
 
 .image-container.fade-out {
     animation-name: fadeOut;
+}
+
+.content-image {
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+/* Add this CSS to your existing stylesheet */
+
+/* Center text in the modal */
+#imageModal .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* To position the close button */
+}
+
+/* Center text in the content area */
+#content-area .image-container .image-label {
+    text-align: center;
+    width: 100%;
+}
+
+/* Center text in the selected filter box */
+#selected-filter-content {
+    text-align: center;
+}
+
+/* Style for the close button */
+.modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+
+#modalImage {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#modalCustomContent {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+}
+
+/* Modal background */
+#imageModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+    justify-content: center;
+    align-items: center;
 }
