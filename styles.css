@@ -20,38 +20,7 @@ body {
     height: 550px;
     margin-top: 20px; /* Space below Box 1 */
 }
-/* laptop Devices*/
-@media (max-width: 1024px) {
-    body {
-        font-size: 15px;
-    }
 
-    .container {
-        flex-direction: column; /* Stack containers vertically */
-        display: flex;
-        width: 1100px;
-        height: 550px;
-        margin-top: 20px; /* Space below Box 1 */
-    }
-
-    .content-container {
-        width: 100%;
-        height: 60%;
-    }
-
-    .right-side {
-        width: 100%;
-    }
-
-    .search-bar {
-        width: 70%;
-    }
-
-    .filter-area-1,
-    .filter-area-2 {
-        width: 90%;
-    }
-}
 /* Tablet Devices (min-width: 768px) */
 @media (max-width: 768px) {
     body {
@@ -121,7 +90,6 @@ body {
         max-width: 250px; /* Smaller max-width */
     }
 }
-
 /* Extra Small Devices (phones, up to 480px) */
 @media (max-width: 480px) {
     .container, .right-side, .content-container, .image-container, .filter-area-1, .filter-area-2, .selected-filter-box {
