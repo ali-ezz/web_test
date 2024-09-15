@@ -90,13 +90,54 @@ body {
         height: 120px;
     }
 }
+/* Mobile Portrait Devices (max-width: 575px) */
+@media (max-width: 575px) {
+    .container {
+        flex-direction: column; /* Stack containers vertically */
+    }
+
+    .content-container {
+        width: 100%; /* Full width for mobile portrait */
+        height: auto; /* Adjust height automatically */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .right-side {
+        width: 100%; /* Full width */
+        margin-top: 10px; /* Reduce space above */
+    }
+
+    .filter-area-1, 
+    .filter-area-2 {
+        width: 100%; /* Full width */
+        padding: 10px; /* Adjust padding */
+        margin-top: 10px; /* Space above */
+    }
+
+    .selected-filter-box {
+        width: 100%; /* Full width */
+        padding: 10px; /* Adjust padding */
+        margin-top: 10px; /* Space above */
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100px; /* Adjust size for mobile portrait */
+        height: 100px;
+    }
+}
+
+/* Mobile Landscape Devices (min-width: 576px and max-height: 500px) */
 @media (min-width: 576px) and (max-height: 500px) {
     .container {
         flex-direction: column; /* Stack containers vertically */
     }
 
     .content-container {
-        width: 100%; /* Full width for mobile landscape */
+        width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
         padding: 10px; /* Adjust padding */
     }
@@ -127,34 +168,7 @@ body {
         height: 120px;
     }
 }
-@media (min-width: 576px) and (max-height: 500px) {
-    .container {
-        display: flex;
-        flex-direction: column; /* Stack containers vertically */
-        width: 1570px;
-        height: 130px;
-        margin-top: 20px; /* Space below Box 1 */
-    }
 
-    .right-side {
-        width: 100%;
-        margin-top: 20px; /* Add space above */
-    }
-
-    .search-bar {
-        width: 100%;
-    }
-
-    .filter-area-1,
-    .filter-area-2 {
-        width: 10%;
-    }
-
-    .image-container {
-        width: 10px;
-        height: 10px;
-    }
-}
 
 
 /* Search Bar Styles */
