@@ -108,8 +108,8 @@ body {
     }
 
     .image-container {
-        width: 60px; /* Smaller size for mobile */
-        height: 60px;
+        width: 50px; /* Smaller size for mobile */
+        height: 50px;
         margin: 2px; /* Minimal margin */
     }
 
@@ -169,7 +169,7 @@ body {
         font-size: 16px; /* Smaller font size */
     }
 }
-/* Additional Styles for Mobile Landscape Devices (min-width: 376px and max-width: 767px) */
+
 @media (min-width: 376px) and (max-width: 767px) {
     .container {
         flex-direction: column; /* Stack containers vertically */
