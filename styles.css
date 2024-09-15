@@ -649,14 +649,13 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 18px; /* Larger font size for Box 2 buttons */
-        padding: 12px 24px; /* Increased padding for larger shape */
+        font-size: 16px; /* Larger font size for Box 2 buttons */
+        padding: 10px 20px; /* Increased padding for larger shape */
         background: none; /* Remove background */
         border: 2px solid #000; /* Border for visibility */
         border-radius: 8px; /* Rounded corners */
         color: #000; /* Text color */
         cursor: pointer; /* Pointer cursor on hover */
-        margin: 2px; /* Margin between buttons */
     }
 
     .filter-area-2 .filter-button:hover {
@@ -671,7 +670,7 @@ body {
         border-radius: 10px;
         margin-right: 0;
         padding: 6px;
-        margin-bottom: 20px; /* Increased margin to the bottom */
+        margin-bottom: 10px; /* Added margin to the bottom */
         overflow-y: auto; /* Enable vertical scrolling */
     }
 
@@ -713,14 +712,14 @@ body {
     }
 
     .selected-filter-box {
-        width: 60%; /* Made box smaller */
+        width: 70%; /* Made box smaller */
         margin: 0 auto; /* Center alignment */
-        padding: 6px; /* Increased padding for content */
+        padding: 4px; /* Reduced padding */
     }
 
     .clear-all-button {
-        padding: 6px;
-        font-size: 14px; /* Slightly larger font size */
+        padding: 4px;
+        font-size: 12px; /* Smaller font size */
     }
 
     .content-item img {
@@ -766,8 +765,8 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 20px; /* Larger font size for smaller devices */
-        padding: 12px 24px; /* Increased padding for larger shape */
+        font-size: 18px; /* Larger font size for smaller devices */
+        padding: 10px 20px; /* Increased padding for larger shape */
         background: none; /* Remove background */
         border: 2px solid #000; /* Border for visibility */
         border-radius: 8px; /* Rounded corners */
@@ -777,7 +776,7 @@ body {
         padding: 4px;
         max-height: 40vh; /* Adjusted height for smaller devices */
         overflow-y: auto; /* Ensure scrolling */
-        margin-bottom: 20px; /* Increased margin to the bottom */
+        margin-bottom: 10px; /* Added margin to the bottom */
     }
 
     .image-container {
