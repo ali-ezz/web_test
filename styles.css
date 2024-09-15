@@ -603,28 +603,50 @@ body {
     }
 
     /* Box 1: Filter Area 1 Styles */
-    .box-1-container,
+    .box-1-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px; /* Reduced margin */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+    }
+
+    .filter-area-1 {
+        width: 100%; /* Full width */
+        display: flex;
+        flex-direction: row; /* Horizontal layout */
+        gap: 4px; /* Reduced space between buttons */
+        padding: 6px; /* Reduced padding */
+        overflow-x: auto; /* Allow horizontal scrolling */
+    }
+
+    .filter-area-1 .filter-button {
+        width: auto; /* Adjust width */
+        flex: 1; /* Allow buttons to stretch */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    /* Box 2: Filter Area 2 Styles */
     .box-2-container {
         width: 100%;
         display: flex;
         justify-content: center;
         margin-top: 5px; /* Reduced margin */
-        overflow-y: auto; /* Allow vertical scrolling if needed */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
     }
 
-    .filter-area-1,
     .filter-area-2 {
         width: 100%; /* Full width */
         display: flex;
-        flex-direction: column; /* Vertical layout */
+        flex-direction: row; /* Horizontal layout */
         gap: 4px; /* Reduced space between buttons */
         padding: 6px; /* Reduced padding */
-        overflow-y: auto; /* Allow vertical scrolling */
+        overflow-x: auto; /* Allow horizontal scrolling */
     }
 
-    .filter-area-1 .filter-button,
     .filter-area-2 .filter-button {
-        width: 100%; /* Full width */
+        width: auto; /* Adjust width */
+        flex: 1; /* Allow buttons to stretch */
         font-size: 12px; /* Smaller font size */
     }
 
@@ -634,8 +656,7 @@ body {
         max-height: 50vh; /* Limit maximum height to 50% of viewport height */
         background-color: #e2e2e2;
         border-radius: 10px; /* Adjusted border radius */
-        margin-right: 0; /* Removed margin */
-        margin-bottom: 10px; /* Added bottom margin */
+        margin: 5px 0; /* Add margin-top and margin-bottom */
         padding: 6px; /* Reduced padding */
         overflow-y: auto; /* Allow vertical scrolling */
     }
@@ -682,28 +703,9 @@ body {
         width: 100%; /* Full width */
     }
 
-    .filter-area-2 {
-        width: 100%; /* Full width */
-        display: flex;
-        flex-direction: column;
-        padding: 6px; /* Reduced padding */
-        overflow-y: auto; /* Allow vertical scrolling */
-    }
-
-    .filter-area-2 .filter-button {
-        width: 100%; /* Full width */
-        margin-bottom: 4px; /* Reduced margin */
-        font-size: 12px; /* Smaller font size */
-    }
-
     .clear-all-button {
         padding: 4px;
         font-size: 12px; /* Smaller font size */
-    }
-
-    .content-item img {
-        width: 100%; /* Full width */
-        height: auto; /* Maintain aspect ratio */
     }
 
     /* Custom Info and Heart Button Styles */
@@ -740,6 +742,7 @@ body {
     .content-container {
         padding: 4px; /* Reduced padding */
         max-height: 40vh; /* Shorter max height for smaller devices */
+        margin-bottom: 10px; /* Increased margin-bottom for better spacing */
     }
 
     .image-container {
