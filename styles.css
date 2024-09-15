@@ -571,257 +571,257 @@ body {
         overflow-x: auto;
     }
 */
-
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
     body {
-        overflow-x: hidden; /* Prevent horizontal overflow on body */
+      overflow-x: hidden; /* Prevent horizontal overflow on body */
     }
-
+  
     .container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      margin-top: 5px;
     }
-
+  
     /* Search Bar Styles */
     .search-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: 5px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
     }
-
+  
     .search-bar {
-        width: 85%;
-        max-width: 500px;
-        padding: 6px;
-        font-size: 12px;
+      width: 85%;
+      max-width: 500px;
+      padding: 6px;
+      font-size: 12px;
     }
-
+  
     /* Box 1: Filter Area 1 Styles */
     .box-1-container {
-        width: 100%;
-        display: flex;
-        flex-direction: row; /* Horizontal layout */
-        justify-content: center;
-        margin-top: 5px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        gap: 4px; /* Space between buttons */
+      width: 100%;
+      display: flex;
+      flex-direction: row; /* Horizontal layout */
+      justify-content: center;
+      margin-top: 5px;
+      overflow-x: auto; /* Allow horizontal scrolling */
+      gap: 4px; /* Space between buttons */
     }
-
+  
     .filter-area-1 {
-        display: flex;
-        flex-direction: row; /* Horizontal layout */
-        flex-wrap: nowrap;
-        gap: 4px;
-        padding: 6px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        width: 100%; /* Full width for Box 1 */
+      display: flex;
+      flex-direction: row; /* Horizontal layout */
+      flex-wrap: nowrap;
+      gap: 4px;
+      padding: 6px;
+      overflow-x: auto; /* Allow horizontal scrolling */
+      width: 100%; /* Full width for Box 1 */
     }
-
+  
     .filter-area-1 .filter-button {
-        font-size: 12px; /* Smaller font size for Box 1 */
-        padding: 4px 8px; /* Reduced padding */
+      font-size: 12px; /* Smaller font size for Box 1 */
+      padding: 4px 8px; /* Reduced padding */
     }
-
+  
     /* Box 2: Filter Area 2 Styles */
     .box-2-container {
-        width: 100%;
-        display: flex;
-        flex-direction: row; /* Horizontal layout */
-        justify-content: center;
-        margin-top: 5px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        gap: 4px; /* Space between buttons */
+      width: 100%;
+      display: flex;
+      flex-direction: row; /* Horizontal layout */
+      justify-content: center;
+      margin-top: 5px;
+      overflow-x: auto; /* Allow horizontal scrolling */
+      gap: 4px; /* Space between buttons */
     }
-
+  
     .filter-area-2 {
-        display: flex;
-        flex-direction: row; /* Horizontal layout */
-        flex-wrap: nowrap;
-        gap: 4px;
-        padding: 6px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        width: 100%; /* Full width for Box 2 */
+      display: flex;
+      flex-direction: row; /* Horizontal layout */
+      flex-wrap: nowrap;
+      gap: 4px;
+      padding: 6px;
+      overflow-x: auto; /* Allow horizontal scrolling */
+      width: 100%; /* Full width for Box 2 */
     }
-
+  
     .filter-area-2 .filter-button {
-        font-size: 16px; /* Larger font size for Box 2 buttons */
-        padding: 10px 20px; /* Increased padding for larger shape */
-        background: none; /* Remove background */
-        border: 2px solid #000; /* Border for visibility */
-        border-radius: 8px; /* Rounded corners */
-        color: #000; /* Text color */
-        cursor: pointer; /* Pointer cursor on hover */
+      font-size: 20px; /* Larger font size for Box 2 buttons */
+      padding: 14px 28px; /* Increased padding for larger shape */
+      background: none; /* Remove background */
+      border: 2px solid #000; /* Border for visibility */
+      border-radius: 8px; /* Rounded corners */
+      color: #000; /* Text color */
+      cursor: pointer; /* Pointer cursor on hover */
+      margin: 2px; /* Margin between buttons */
     }
-
+  
     .filter-area-2 .filter-button:hover {
-        background: #f0f0f0; /* Background color on hover */
+      background: #f0f0f0; /* Background color on hover */
     }
-
+  
     /* Main Content and Right Side Styles */
     .content-container {
-        width: 100%;
-        max-height: 50vh; /* Adjusted height */
-        background-color: #e2e2e2;
-        border-radius: 10px;
-        margin-right: 0;
-        padding: 6px;
-        margin-bottom: 10px; /* Added margin to the bottom */
-        overflow-y: auto; /* Enable vertical scrolling */
+      width: 100%;
+      max-height: 50vh; /* Adjusted height */
+      background-color: #e2e2e2;
+      border-radius: 10px;
+      margin-right: 0;
+      padding: 6px;
+      margin-bottom: 20px; /* Increased margin to the bottom */
+      overflow-y: auto; /* Enable vertical scrolling */
     }
-
+  
     .image-container {
-        width: 80px; /* Adjust image size */
-        height: 80px; /* Adjust image size */
-        margin: 4px; /* Adjust margin */
+      width: 80px; /* Adjust image size */
+      height: 80px; /* Adjust image size */
+      margin: 4px; /* Adjust margin */
     }
-
+  
     .image-container img {
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      height: 100%;
     }
-
+  
     .image-label {
-        font-size: 12px; /* Adjust font size for labels */
-        padding: 2px; /* Adjust padding */
+      font-size: 12px; /* Adjust font size for labels */
+      padding: 2px; /* Adjust padding */
     }
-
+  
     /* Modal Window Styles */
     .modal-content {
-        width: 85%;
-        max-width: 250px;
-        padding: 6px;
-        overflow-y: auto; /* Allow scrolling in modal */
+      width: 85%;
+      max-width: 250px;
+      padding: 6px;
+      overflow-y: auto; /* Allow scrolling in modal */
     }
-
+  
     #modalImage {
-        max-width: 100%;
-        max-height: 50vh; /* Ensure image fits well */
+      max-width: 100%;
+      max-height: 50vh; /* Ensure image fits well */
     }
-
+  
     .right-side {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px; /* Reduced gap */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px; /* Reduced gap */
     }
-
+  
     .selected-filter-box {
-        width: 70%; /* Made box smaller */
-        margin: 0 auto; /* Center alignment */
-        padding: 4px; /* Reduced padding */
+      width: 60%; /* Made box smaller */
+      margin: 0 auto; /* Center alignment */
+      padding: 6px; /* Increased padding for content */
     }
-
+  
+    .selected-filter-box .filter-button {
+      font-size: 10px; /* Smaller font size for selected filters */
+      padding: 2px 4px; /* Reduced padding for selected filters */
+    }
+  
     .clear-all-button {
-        padding: 4px;
-        font-size: 12px; /* Smaller font size */
+      padding: 6px;
+      font-size: 14px; /* Slightly larger font size */
     }
-
+  
     .content-item img {
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
     }
-
+  
     .custom-info {
-        display: block;
-        padding: 4px;
+      display: block;
+      padding: 4px;
     }
-
-    .heart-button,
-    .plus-button {
-        font-size: 18px; /* Adjusted font size */
+  
+    .heart-button, .plus-button {
+      font-size: 18px; /* Adjusted font size */
     }
-
+  
     /* Hover Button Styles */
     .filter-button:hover {
-        font-size: 10px; /* Smaller font size on hover */
-        padding: 2px 6px; /* Reduced padding on hover */
+      font-size: 10px; /* Smaller font size on hover */
+      padding: 2px 6px; /* Reduced padding on hover */
     }
-}
-
-/* Additional Media Query for Smaller Devices (Phones) */
-@media (max-width: 768px) {
+  }
+  
+  /* Additional Media Query for Smaller Devices (Phones) */
+  @media (max-width: 768px) {
     .search-bar {
-        font-size: 10px; /* Smaller font size */
-        padding: 4px; /* Reduced padding */
+      font-size: 10px; /* Smaller font size */
+      padding: 4px; /* Reduced padding */
     }
-
+  
     .filter-area-1 {
-        padding: 4px; /* Reduced padding */
+      padding: 4px; /* Reduced padding */
     }
-
+  
     .filter-area-1 .filter-button {
-        font-size: 10px; /* Smaller font size */
-        padding: 4px 8px; /* Adjusted padding */
+      font-size: 10px; /* Smaller font size */
+      padding: 4px 8px; /* Adjusted padding */
     }
-
+  
     .filter-area-2 {
-        padding: 4px; /* Reduced padding */
+      padding: 4px; /* Reduced padding */
     }
-
+  
     .filter-area-2 .filter-button {
-        font-size: 18px; /* Larger font size for smaller devices */
-        padding: 10px 20px; /* Increased padding for larger shape */
-        background: none; /* Remove background */
-        border: 2px solid #000; /* Border for visibility */
-        border-radius: 8px; /* Rounded corners */
+      font-size: 22px; /* Larger font size for smaller devices */
+      padding: 14px 28px; /* Increased padding for larger shape */
+      background: none; /* Remove background */
+      border: 2px solid #000; /* Border for visibility */
+      border-radius: 8px; /* Rounded corners */
     }
-
+  
     .content-container {
-        padding: 4px;
-        max-height: 40vh; /* Adjusted height for smaller devices */
-        overflow-y: auto; /* Ensure scrolling */
-        margin-bottom: 10px; /* Added margin to the bottom */
+      padding: 4px;
+      max-height: 40vh; /* Adjusted height for smaller devices */
+      overflow-y: auto; /* Ensure scrolling */
+      margin-bottom: 20px; /* Increased margin to the bottom */
     }
-
+  
     .image-container {
-        width: 60px; /* Smaller image width */
-        height: 60px; /* Smaller image height */
+      width: 60px; /* Smaller image width */
+      height: 60px; /* Smaller image height */
     }
-
+  
     .image-label {
-        font-size: 8px; /* Smaller font size for labels */
+      font-size: 8px; /* Smaller font size for labels */
     }
-
+  
     .modal-content {
-        max-width: 200px; /* Smaller max width for modal */
-        padding: 4px; /* Reduced padding */
+      max-width: 200px; /* Smaller max width for modal */
+      padding: 4px; /* Reduced padding */
     }
-
+  
     #modalImage {
-        max-height: 40vh; /* Limit image height */
+      max-height: 40vh; /* Limit image height */
     }
-
+  
     .selected-filter-item {
-        font-size: 12px; /* Smaller font size */
+      font-size: 12px; /* Smaller font size */
     }
-
+  
     .filter-clear-button {
-        width: 16px; /* Smaller button width */
-        height: 16px; /* Smaller button height */
-        font-size: 8px; /* Smaller font size */
+      width: 16px; /* Smaller button width */
+      height: 16px; /* Smaller button height */
+      font-size: 8px; /* Smaller font size */
     }
-
+  
     .clear-all-button {
-        font-size: 12px; /* Smaller font size */
+      font-size: 12px; /* Smaller font size */
     }
-
-    .heart-button,
-    .plus-button {
-        font-size: 16px; /* Adjusted font size */
+  
+    .heart-button, .plus-button {
+      font-size: 16px; /* Adjusted font size */
     }
-
+  
     /* Hover Button Styles */
     .filter-button:hover {
-        font-size: 8px; /* Smaller font size on hover */
-        padding: 2px 4px; /* Reduced padding on hover */
+      font-size: 8px; /* Smaller font size on hover */
+      padding: 2px 4px; /* Reduced padding on hover */
     }
-}
-
-
-
+  }
