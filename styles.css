@@ -94,8 +94,8 @@ body {
     .container {
         flex-direction: column; /* Stack containers vertically */
         display: flex;
-        width: 20px;
-        height: 10px;
+        width: 70px;
+        height: 30px;
         margin-top: 20px; /* Space below Box 1 */
     }
 
