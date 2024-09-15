@@ -20,7 +20,7 @@ body {
     height: 550px;
     margin-top: 20px; /* Space below Box 1 */
 }
-
+/* laptop Devices*/
 @media (max-width: 1024px) {
     body {
         font-size: 15px;
@@ -90,47 +90,76 @@ body {
         height: 120px;
     }
 }
+
 /* Mobile Portrait Devices (max-width: 575px) */
 @media (max-width: 575px) {
     .container {
         flex-direction: column; /* Stack containers vertically */
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height automatically */
     }
 
     .content-container {
-        width: 100%; /* Full width for mobile portrait */
+        width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
-        padding: 10px; /* Adjust padding */
+        padding: 5px; /* Reduce padding */
+        margin-top: 5px; /* Reduce space above */
     }
 
     .right-side {
         width: 100%; /* Full width */
-        margin-top: 10px; /* Reduce space above */
+        margin-top: 5px; /* Reduce space above */
+        padding: 5px; /* Reduce padding */
     }
 
     .filter-area-1, 
     .filter-area-2 {
         width: 100%; /* Full width */
-        padding: 10px; /* Adjust padding */
-        margin-top: 10px; /* Space above */
+        padding: 5px; /* Reduce padding */
+        margin-top: 5px; /* Reduce space above */
     }
 
     .selected-filter-box {
         width: 100%; /* Full width */
-        padding: 10px; /* Adjust padding */
-        margin-top: 10px; /* Space above */
+        padding: 5px; /* Reduce padding */
+        margin-top: 5px; /* Reduce space above */
     }
 
     .search-bar {
-        width: 100%;
+        width: 100%; /* Full width */
+        padding: 8px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
     }
 
     .image-container {
-        width: 100px; /* Adjust size for mobile portrait */
-        height: 100px;
+        width: 80px; /* Smaller size for mobile portrait */
+        height: 80px;
+        margin: 4px; /* Reduce margin */
+    }
+
+    .image-label {
+        font-size: 12px; /* Smaller font size */
+        padding: 2px; /* Reduce padding */
+    }
+
+    .filter-button {
+        font-size: 14px; /* Smaller font size */
+        padding: 8px; /* Reduce padding */
+    }
+
+    .clear-all-button {
+        padding: 5px 5px;
+        font-size: 14px; /* Adjust font size */
+        width: 30px; /* Smaller button */
+        height: 30px;
+    }
+
+    .modal-content {
+        width: 90%; /* Adjust width */
+        max-width: 320px; /* Maximum width for modal */
     }
 }
-
-/* Mobile Landscape Devices (min-width: 576px and max-height: 500px) */
+/* Additional Styles for Mobile Landscape Devices (min-width: 576px and max-height: 500px) */
 @media (min-width: 576px) and (max-height: 500px) {
     .container {
         flex-direction: column; /* Stack containers vertically */
@@ -144,30 +173,31 @@ body {
 
     .right-side {
         width: 100%; /* Full width */
-        margin-top: 20px; /* Space above */
+        margin-top: 10px; /* Space above */
     }
 
     .filter-area-2 {
         width: 100%; /* Full width */
         padding: 10px; /* Adjust padding */
-        margin-top: 10px; /* Space above */
     }
 
     .selected-filter-box {
         width: 100%; /* Full width */
         padding: 10px; /* Adjust padding */
-        margin-top: 10px; /* Space above */
     }
 
     .search-bar {
-        width: 100%;
+        width: 100%; /* Full width */
+        padding: 10px; /* Adjust padding */
+        font-size: 16px; /* Adjust font size */
     }
 
     .image-container {
-        width: 120px; /* Adjust size for mobile landscape */
-        height: 120px;
+        width: 100px; /* Adjust size for mobile landscape */
+        height: 100px;
     }
 }
+
 
 
 
