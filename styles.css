@@ -572,9 +572,12 @@ body {
     }
 */
 
-
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
+    body {
+        overflow-x: hidden; /* Prevent horizontal overflow on body */
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -646,8 +649,17 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 10px; /* Smaller font size for Box 2 */
-        padding: 4px 8px; /* Reduced padding */
+        font-size: 16px; /* Larger font size for Box 2 buttons */
+        padding: 10px 20px; /* Increased padding for larger shape */
+        background: none; /* Remove background */
+        border: 2px solid #000; /* Border for visibility */
+        border-radius: 8px; /* Rounded corners */
+        color: #000; /* Text color */
+        cursor: pointer; /* Pointer cursor on hover */
+    }
+
+    .filter-area-2 .filter-button:hover {
+        background: #f0f0f0; /* Background color on hover */
     }
 
     /* Main Content and Right Side Styles */
@@ -658,13 +670,14 @@ body {
         border-radius: 10px;
         margin-right: 0;
         padding: 6px;
+        margin-bottom: 10px; /* Added margin to the bottom */
         overflow-y: auto; /* Enable vertical scrolling */
     }
 
     .image-container {
-        width: 80px; /* Smaller image width */
-        height: 80px; /* Smaller image height */
-        margin: 4px; /* Reduced margin */
+        width: 80px; /* Adjust image size */
+        height: 80px; /* Adjust image size */
+        margin: 4px; /* Adjust margin */
     }
 
     .image-container img {
@@ -673,8 +686,8 @@ body {
     }
 
     .image-label {
-        font-size: 10px; /* Smaller font size for image labels */
-        padding: 1px; /* Reduced padding */
+        font-size: 12px; /* Adjust font size for labels */
+        padding: 2px; /* Adjust padding */
     }
 
     /* Modal Window Styles */
@@ -699,7 +712,9 @@ body {
     }
 
     .selected-filter-box {
-        width: 100%;
+        width: 70%; /* Made box smaller */
+        margin: 0 auto; /* Center alignment */
+        padding: 4px; /* Reduced padding */
     }
 
     .clear-all-button {
@@ -721,6 +736,12 @@ body {
     .plus-button {
         font-size: 18px; /* Adjusted font size */
     }
+
+    /* Hover Button Styles */
+    .filter-button:hover {
+        font-size: 10px; /* Smaller font size on hover */
+        padding: 2px 6px; /* Reduced padding on hover */
+    }
 }
 
 /* Additional Media Query for Smaller Devices (Phones) */
@@ -729,63 +750,33 @@ body {
         font-size: 10px; /* Smaller font size */
         padding: 4px; /* Reduced padding */
     }
-    /* Box 1: Filter Area 1 Styles */
-    .box-1-container {
-        width: 100%;
-        display: flex;
-        flex-direction: row; /* Horizontal layout */
-        justify-content: center;
-        margin-top: 5px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        gap: 4px; /* Space between buttons */
-    }
 
     .filter-area-1 {
-        display: flex;
-        flex-direction: row; /* Horizontal layout */
-        flex-wrap: nowrap;
-        gap: 4px;
-        padding: 6px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        width: 100%; /* Full width for Box 1 */
+        padding: 4px; /* Reduced padding */
     }
 
     .filter-area-1 .filter-button {
-        font-size: 12px; /* Smaller font size for Box 1 */
-        padding: 4px 8px; /* Reduced padding */
-    }
-
-    /* Box 2: Filter Area 2 Styles */
-    .box-2-container {
-        width: 100%;
-        display: flex;
-        flex-direction: row; /* Horizontal layout */
-        justify-content: center;
-        margin-top: 5px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        gap: 4px; /* Space between buttons */
+        font-size: 10px; /* Smaller font size */
+        padding: 4px 8px; /* Adjusted padding */
     }
 
     .filter-area-2 {
-        display: flex;
-        flex-direction: row; /* Horizontal layout */
-        flex-wrap: nowrap;
-        gap: 4px;
-        padding: 6px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        width: 100%; /* Full width for Box 2 */
+        padding: 4px; /* Reduced padding */
     }
 
     .filter-area-2 .filter-button {
-        font-size: 10px; /* Smaller font size for Box 2 */
-        padding: 4px 8px; /* Reduced padding */
+        font-size: 18px; /* Larger font size for smaller devices */
+        padding: 10px 20px; /* Increased padding for larger shape */
+        background: none; /* Remove background */
+        border: 2px solid #000; /* Border for visibility */
+        border-radius: 8px; /* Rounded corners */
     }
-
 
     .content-container {
         padding: 4px;
         max-height: 40vh; /* Adjusted height for smaller devices */
         overflow-y: auto; /* Ensure scrolling */
+        margin-bottom: 10px; /* Added margin to the bottom */
     }
 
     .image-container {
@@ -823,6 +814,12 @@ body {
     .heart-button,
     .plus-button {
         font-size: 16px; /* Adjusted font size */
+    }
+
+    /* Hover Button Styles */
+    .filter-button:hover {
+        font-size: 8px; /* Smaller font size on hover */
+        padding: 2px 4px; /* Reduced padding on hover */
     }
 }
 
