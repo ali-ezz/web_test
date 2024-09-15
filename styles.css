@@ -967,8 +967,8 @@ body {
     }
 
     .filter-area-1 .filter-button {
-        font-size: 6px; /* Smaller font size */
-        padding: 4px 10px; /* Further reduced padding */
+        font-size: 16px; /* Smaller font size */
+        padding: 8px 10px; /* Further reduced padding */
     }
 
     .filter-area-2 {
@@ -977,8 +977,8 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 6px; /* Same font size as Box 1 buttons */
-        padding: 8px 10px; /* Same padding as Box 1 buttons */
+        font-size: 16px; /* Same font size as Box 1 buttons */
+        padding: 8px 14px; /* Same padding as Box 1 buttons */
     }
 
     .content-container {
@@ -1024,7 +1024,4 @@ body {
     .plus-button {
         font-size: 14px; /* Adjusted font size */
     }
-
-    /* Hover Button Styles */
-
 }
