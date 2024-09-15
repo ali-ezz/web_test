@@ -979,7 +979,7 @@ body {
 
     .filter-area-2 .filter-button {
         margin-top: 10px;
-        font-size: 2px; /* Same font size as Box 1 buttons */
+        font-size: 7px; /* Same font size as Box 1 buttons */
         padding: 8px 14px; /* Same padding as Box 1 buttons */
     }
 
