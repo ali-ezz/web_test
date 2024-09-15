@@ -571,19 +571,14 @@ body {
         overflow-x: auto;
     }
 */
-
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
-    body {
-        overflow-x: auto;
-    }
     .container {
         display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        width: 100%; /* Full width */
-        height: auto; /* Adjust height automatically */
-        margin-top: 5px; /* Reduced space */
-        overflow-y: auto; /* Allow vertical scrolling */
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
     }
 
     /* Search Bar Styles */
@@ -591,15 +586,14 @@ body {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 5px; /* Reduced margin */
+        margin-top: 5px;
     }
 
     .search-bar {
-        width: 85%; /* Adjusted width */
-        max-width: 500px; /* Reduced max width */
-        padding: 6px; /* Reduced padding */
-        font-size: 12px; /* Smaller font size */
-        overflow: hidden; /* Prevent overflow */
+        width: 85%;
+        max-width: 500px;
+        padding: 6px;
+        font-size: 12px;
     }
 
     /* Box 1: Filter Area 1 Styles */
@@ -607,64 +601,54 @@ body {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 5px; /* Reduced margin */
-        overflow-x: auto; /* Allow horizontal scrolling if needed */
+        margin-top: 5px;
+        overflow-x: auto;
     }
 
     .filter-area-1 {
-        width: 100%; /* Full width */
         display: flex;
-        flex-direction: row; /* Horizontal layout */
-        gap: 4px; /* Reduced space between buttons */
-        padding: 6px; /* Reduced padding */
-        overflow-x: auto; /* Allow horizontal scrolling */
+        flex-wrap: nowrap;
+        gap: 4px;
+        padding: 6px;
+        overflow-x: auto;
+        width: 100%; /* Full width for Box 1 */
     }
 
     .filter-area-1 .filter-button {
-        width: auto; /* Adjust width */
-        flex: 1; /* Allow buttons to stretch */
-        font-size: 12px; /* Smaller font size */
+        font-size: 14px; /* Slightly larger font size for wider Box 1 */
+        padding: 6px 12px; /* Increased padding */
+        margin: 4px; /* Adjust margin */
     }
 
     /* Box 2: Filter Area 2 Styles */
-    .box-2-container {
+    .filter-area-2 {
         width: 100%;
         display: flex;
-        justify-content: center;
-        margin-top: 5px; /* Reduced margin */
-        overflow-x: auto; /* Allow horizontal scrolling if needed */
-    }
-
-    .filter-area-2 {
-        width: 100%; /* Full width */
-        display: flex;
-        flex-direction: row; /* Horizontal layout */
-        gap: 4px; /* Reduced space between buttons */
-        padding: 6px; /* Reduced padding */
-        overflow-x: auto; /* Allow horizontal scrolling */
+        flex-direction: column;
+        padding: 6px;
     }
 
     .filter-area-2 .filter-button {
-        width: auto; /* Adjust width */
-        flex: 1; /* Allow buttons to stretch */
-        font-size: 12px; /* Smaller font size */
+        font-size: 10px; /* Smaller font size for Box 2 */
+        padding: 4px 8px; /* Reduced padding */
+        margin-bottom: 4px; /* Reduced margin between buttons */
     }
 
     /* Main Content and Right Side Styles */
     .content-container {
-        width: 100%; /* Full width */
-        max-height: 50vh; /* Limit maximum height to 50% of viewport height */
+        width: 100%;
+        max-height: 50vh;
         background-color: #e2e2e2;
-        border-radius: 10px; /* Adjusted border radius */
-        margin: 5px 0; /* Add margin-top and margin-bottom */
-        padding: 6px; /* Reduced padding */
-        overflow-y: auto; /* Allow vertical scrolling */
+        border-radius: 10px;
+        margin-right: 0;
+        padding: 6px;
+        overflow-y: auto;
     }
 
     .image-container {
-        width: 80px; /* Smaller width */
-        height: 80px; /* Smaller height */
-        margin: 4px; /* Reduced margin */
+        width: 80px;
+        height: 80px;
+        margin: 4px;
     }
 
     .image-container img {
@@ -673,113 +657,118 @@ body {
     }
 
     .image-label {
-        font-size: 10px; /* Smaller font size */
-        padding: 1px; /* Reduced padding */
+        font-size: 10px;
+        padding: 1px;
     }
 
     /* Modal Window Styles */
     .modal-content {
-        width: 85%; /* Full width */
-        max-width: 250px; /* Smaller max width */
-        padding: 6px; /* Reduced padding */
-        overflow-y: auto; /* Allow scrolling in modal */
+        width: 85%;
+        max-width: 250px;
+        padding: 6px;
+        overflow-y: auto;
     }
 
     #modalImage {
         max-width: 100%;
-        max-height: 50vh; /* Ensure image fits well */
+        max-height: 50vh;
     }
 
     .right-side {
-        width: 100%; /* Full width */
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8px; /* Reduced gap */
-        overflow-y: auto; /* Allow vertical scrolling */
+        gap: 8px;
     }
 
     .selected-filter-box {
-        width: 100%; /* Full width */
+        width: 100%;
     }
 
     .clear-all-button {
         padding: 4px;
-        font-size: 12px; /* Smaller font size */
+        font-size: 12px;
     }
 
-    /* Custom Info and Heart Button Styles */
+    .content-item img {
+        width: 100%;
+        height: auto;
+    }
+
     .custom-info {
-        display: block; /* Show custom info */
-        padding: 4px; /* Reduced padding */
+        display: block;
+        padding: 4px;
     }
 
     .heart-button,
     .plus-button {
-        font-size: 18px; /* Adjusted font size */
+        font-size: 18px;
     }
 }
 
 /* Additional Media Query for Smaller Devices (Phones) */
 @media (max-width: 768px) {
-    body {
-        overflow-x: auto;
-    }
     .search-bar {
-        font-size: 10px; /* Smaller font size */
-        padding: 4px; /* Reduced padding */
+        font-size: 10px;
+        padding: 4px;
     }
 
-    .filter-area-1,
-    .filter-area-2 {
-        padding: 4px; /* Reduced padding */
+    .filter-area-1 {
+        padding: 4px;
     }
 
-    .filter-button {
-        font-size: 10px; /* Smaller font size */
+    .filter-area-1 .filter-button {
+        font-size: 12px; /* Slightly larger font size */
+        padding: 4px 8px; /* Increased padding */
+    }
+
+    .filter-area-2 .filter-button {
+        font-size: 8px; /* Smaller font size */
+        padding: 2px 6px; /* Reduced padding */
     }
 
     .content-container {
-        padding: 4px; /* Reduced padding */
-        max-height: 40vh; /* Shorter max height for smaller devices */
-        margin-bottom: 10px; /* Increased margin-bottom for better spacing */
+        padding: 4px;
+        max-height: 40vh;
+        overflow-y: auto;
     }
 
     .image-container {
-        width: 60px; /* Smaller width */
-        height: 60px; /* Smaller height */
+        width: 60px;
+        height: 60px;
     }
 
     .image-label {
-        font-size: 8px; /* Smaller font size */
+        font-size: 8px;
     }
 
     .modal-content {
-        max-width: 200px; /* Smaller max width */
-        padding: 4px; /* Reduced padding */
+        max-width: 200px;
+        padding: 4px;
     }
 
     #modalImage {
-        max-height: 40vh; /* Limit image height */
+        max-height: 40vh;
     }
 
     .selected-filter-item {
-        font-size: 12px; /* Smaller font size */
+        font-size: 12px;
     }
 
     .filter-clear-button {
-        width: 16px; /* Smaller width */
-        height: 16px; /* Smaller height */
-        font-size: 8px; /* Smaller font size */
+        width: 16px;
+        height: 16px;
+        font-size: 8px;
     }
 
     .clear-all-button {
-        font-size: 12px; /* Smaller font size */
+        font-size: 12px;
     }
 
     .heart-button,
     .plus-button {
-        font-size: 16px; /* Smaller font size */
+        font-size: 16px;
     }
 }
 
