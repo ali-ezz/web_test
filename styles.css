@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -13,78 +14,6 @@ body {
     overflow: hidden;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .search-bar {
-        width: 90%;
-        font-size: 0.9em;
-    }
-
-    .content-container,
-    .right-side {
-        flex: 1;
-    }
-
-    .filter-button {
-        font-size: 0.9em;
-        padding: 8px;
-    }
-}
-
-@media (max-width: 992px) {
-    .search-bar {
-        width: 95%;
-        font-size: 0.8em;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    .right-side {
-        margin-top: 20px;
-    }
-
-    .filter-button {
-        font-size: 0.8em;
-        padding: 7px;
-    }
-}
-
-@media (max-width: 768px) {
-    .search-bar {
-        width: 100%;
-        font-size: 0.7em;
-    }
-
-    .filter-button {
-        font-size: 0.7em;
-        padding: 6px;
-    }
-
-    .content-image {
-        width: 120px; /* Adjust image size for smaller screens */
-    }
-}
-
-@media (max-width: 576px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    .search-bar {
-        font-size: 0.6em;
-    }
-
-    .filter-button {
-        font-size: 0.6em;
-        padding: 5px;
-    }
-
-    .content-image {
-        width: 100px; /* Further adjust image size for very small screens */
-    }
-}
 /* Search Bar Styles */
 .search-container {
     width: 100%;
