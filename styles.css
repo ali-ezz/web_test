@@ -650,8 +650,8 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 10px; /* Smaller font size for Box 2 */
-        padding: 4px 8px; /* Reduced padding */
+        font-size: 14px; /* Larger font size for Box 2 */
+        padding: 6px 12px; /* Increased padding */
     }
 
     /* Main Content and Right Side Styles */
@@ -667,9 +667,9 @@ body {
     }
 
     .image-container {
-        width: 80px; /* Smaller image width */
-        height: 80px; /* Smaller image height */
-        margin: 4px; /* Reduced margin */
+        width: 80px; /* Adjust image size */
+        height: 80px; /* Adjust image size */
+        margin: 4px; /* Adjust margin */
     }
 
     .image-container img {
@@ -678,8 +678,8 @@ body {
     }
 
     .image-label {
-        font-size: 12px; /* Increased font size for labels */
-        padding: 2px; /* Adjusted padding */
+        font-size: 12px; /* Adjust font size for labels */
+        padding: 2px; /* Adjust padding */
     }
 
     /* Modal Window Styles */
@@ -704,8 +704,9 @@ body {
     }
 
     .selected-filter-box {
-        width: 80%; /* Made box smaller */
+        width: 70%; /* Made box smaller */
         margin: 0 auto; /* Center alignment */
+        padding: 4px; /* Reduced padding */
     }
 
     .clear-all-button {
@@ -752,8 +753,8 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 8px; /* Smaller font size */
-        padding: 2px 6px; /* Reduced padding */
+        font-size: 12px; /* Larger font size for smaller devices */
+        padding: 4px 8px; /* Increased padding */
     }
 
     .content-container {
@@ -806,6 +807,5 @@ body {
         padding: 2px 4px; /* Reduced padding on hover */
     }
 }
-
 
 
