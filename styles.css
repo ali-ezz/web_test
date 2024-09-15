@@ -553,106 +553,106 @@ body {
     background-color: #218884; /* Darker green on hover */
     transform: scale(1.2); /* Scale up on hover */
 }
-/* For extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+    .search-container {
+        width: 100%;
+    }
+
     .search-bar {
-        width: 90%; /* Adjust search bar width */
+        width: 90%; /* Adjust the width for mobile screens */
     }
 
     .box-1-container {
-        width: 100%; /* Full width for Box 1 */
+        width: 100%; /* Full width on mobile */
     }
 
     .filter-area-1 {
-        width: 100%; /* Full width for filter buttons */
         flex-direction: column; /* Stack buttons vertically */
+        width: 90%;
     }
 
     .container {
-        flex-direction: column;
+        flex-direction: column; /* Stack content vertically */
         width: 100%; /* Full width */
-        height: auto; /* Adjust height for smaller screens */
+        height: auto; /* Auto height */
+        margin-top: 10px; /* Reduce margin */
     }
 
     .content-container {
-        width: 100%; /* Full width */
+        width: 100%; /* Full width for content on mobile */
+        height: auto;
         margin-right: 0;
+        padding: 10px;
     }
 
     .right-side {
         width: 100%; /* Full width for the right side */
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .image-container {
+        width: 120px; /* Smaller images on mobile */
+        height: 120px;
     }
 
     .filter-area-2 {
-        width: 100%;
+        width: 100%; /* Full width for Filter Area 2 */
     }
 
-    .image-container {
-        width: 100px; /* Smaller images */
-        height: 100px;
-    }
-}
-
-/* For small devices (portrait tablets and large phones, 600px to 768px) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-    .search-bar {
-        width: 80%; /* Adjust search bar width */
+    .filter-area-2 .filter-button {
+        width: 100%; /* Full width buttons */
     }
 
-    .box-1-container {
-        width: 90%; /* Adjust width for Box 1 */
+    .selected-filter-box {
+        width: 90%; /* Adjust selected filters box */
     }
 
-    .filter-area-1 {
-        width: 90%; /* Adjust filter area width */
-        flex-direction: row; /* Horizontal button layout */
+    .modal-content {
+        width: 90%; /* Full width modal on mobile */
+        max-width: none;
     }
 
-    .container {
-        width: 100%; /* Full width */
-        height: auto; /* Adjust height */
+    /* Adjust the slider to fit the phone screen */
+    .slider {
+        width: 100%; /* Full width slider */
+        height: 300px; /* Adjust height */
+        overflow: hidden; /* Ensure it stays contained */
     }
 
-    .content-container {
-        width: 80%;
-    }
-
-    .right-side {
-        width: 100%; /* Full width */
-        margin-top: 20px;
-    }
-
-    .image-container {
-        width: 120px; /* Medium size images */
-        height: 120px;
+    .slider img {
+        width: 100%; /* Ensure images scale to fit */
+        height: auto;
     }
 }
 
-/* For medium devices (landscape tablets and small desktops, 768px to 992px) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+/* Medium devices (tablets, 600px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
     .search-bar {
-        width: 70%;
+        width: 75%; /* Adjust width for tablets */
     }
 
     .box-1-container {
-        width: 80%;
+        width: 75%;
     }
 
     .filter-area-1 {
-        width: 80%;
-        gap: 15px; /* Larger space between buttons */
+        width: 85%;
+        gap: 5px; /* Smaller gap between buttons */
     }
 
     .container {
-        width: 90%;
+        width: 95%; /* Slightly smaller width */
+        height: auto;
     }
 
     .content-container {
-        width: 70%;
+        width: 70%; /* Adjust for tablets */
     }
 
     .right-side {
-        width: 30%;
+        width: 30%; /* Adjust width for right side */
     }
 
     .image-container {
@@ -661,23 +661,10 @@ body {
     }
 }
 
-/* For large devices (desktops, 992px and up) */
-@media only screen and (min-width: 993px) {
-    .search-bar {
-        width: 50%;
-    }
-
-    .box-1-container {
-        width: 50%;
-    }
-
-    .filter-area-1 {
-        width: 80%;
-        gap: 20px;
-    }
-
+/* Large devices (desktops, 900px and above) */
+@media (min-width: 901px) {
     .container {
-        width: 1200px;
+        width: 100%; /* Use full width on larger screens */
     }
 
     .content-container {
