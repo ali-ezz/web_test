@@ -199,9 +199,13 @@ document.addEventListener('DOMContentLoaded', () => {
     updateContentArea(); // Update content area based on filters
 });
 
+let debounceTimer;
 document.getElementById('search-bar').addEventListener('input', (event) => {
-    const searchTerm = event.target.value.toLowerCase();
-    updateContentArea(searchTerm);
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+        const searchTerm = event.target.value.toLowerCase();
+        updateContentArea(searchTerm);
+    }, 300); // Adjust delay as needed
 });
 
 function selectFilter(filterName) {

@@ -13,78 +13,76 @@ body {
     overflow: hidden;
 }
 
-/* Tablets and Small Screens (min-width: 600px) */
-@media (max-width: 1024px) {
-    body {
-        font-size: 14px;
-    }
-    
+/* Responsive Design */
+@media (max-width: 1200px) {
     .search-bar {
-        width: 70%;
-        max-width: 600px;
-    }
-    
-    .box-1-container {
-        width: 70%;
-    }
-    
-    .filter-area-1 {
         width: 90%;
+        font-size: 0.9em;
     }
-    
-    .container {
-        width: 100%;
-        height: auto; /* Adjust height for smaller screens */
+
+    .content-container,
+    .right-side {
+        flex: 1;
     }
-    
-    .content-container {
-        width: 100%;
-    }
-    
-    .filter-area-2 {
-        width: 100%;
+
+    .filter-button {
+        font-size: 0.9em;
+        padding: 8px;
     }
 }
 
-/* Mobile Devices (min-width: 320px) */
-@media (max-width: 600px) {
-    body {
-        font-size: 12px;
-    }
-    
+@media (max-width: 992px) {
     .search-bar {
-        width: 90%;
-        max-width: 400px;
+        width: 95%;
+        font-size: 0.8em;
     }
-    
-    .box-1-container {
-        width: 90%;
-    }
-    
-    .filter-area-1 {
-        width: 100%;
-        flex-direction: column; /* Stack buttons vertically */
-    }
-    
+
     .container {
-        flex-direction: column; /* Stack content vertically */
-        width: 100%;
-        height: auto;
+        flex-direction: column;
     }
-    
-    .content-container {
-        width: 100%;
-        height: auto;
+
+    .right-side {
+        margin-top: 20px;
     }
-    
-    .filter-area-2 {
-        width: 100%;
+
+    .filter-button {
+        font-size: 0.8em;
+        padding: 7px;
     }
-    
-    /* Adjust image container sizes for mobile */
-    .image-container {
-        width: 100px; /* Smaller width */
-        height: 100px; /* Smaller height */
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    .filter-button {
+        font-size: 0.7em;
+        padding: 6px;
+    }
+
+    .content-image {
+        width: 120px; /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .search-bar {
+        font-size: 0.6em;
+    }
+
+    .filter-button {
+        font-size: 0.6em;
+        padding: 5px;
+    }
+
+    .content-image {
+        width: 100px; /* Further adjust image size for very small screens */
     }
 }
 
