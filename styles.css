@@ -13,6 +13,8 @@ body {
     font-family: Arial, sans-serif;
     overflow: hidden;
 }
+
+/* Mobile Devices (Up to 480px) */
 @media (max-width: 480px) {
     .search-bar {
         font-size: 14px;
@@ -51,7 +53,6 @@ body {
         padding: 5px 10px;
     }
 }
-
 /* Tablets (481px to 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     .search-bar {
@@ -91,7 +92,6 @@ body {
         padding: 8px 15px;
     }
 }
-
 /* Laptops and Desktops (769px and up) */
 @media (min-width: 769px) {
     .search-bar {
@@ -131,6 +131,9 @@ body {
         padding: 10px 20px;
     }
 }
+
+
+
 /* Search Bar Styles */
 .search-container {
     width: 100%;
