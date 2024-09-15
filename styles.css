@@ -557,151 +557,189 @@ body {
 
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
-
     .container {
         display: flex;
         flex-direction: column; /* Stack elements vertically */
         width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
-        margin-top: 20px; /* Space below Box 1 */
+        margin-top: 5px; /* Further reduced space */
     }
 
+    /* Search Bar Styles */
     .search-container {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 20px; /* Margin at the top */
+        margin-top: 5px; /* Further reduced margin */
     }
 
     .search-bar {
-        width: 90%;
-        max-width: 600px; /* Adjusted for smaller screens */
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        font-size: 14px; /* Reduced font size */
-        text-align: right; /* Align text to the right */
+        width: 85%; /* Adjusted width for smaller screens */
+        max-width: 500px; /* Reduced max width */
+        padding: 6px; /* Further reduced padding */
+        font-size: 12px; /* Smaller font size */
     }
 
     /* Box 1: Filter Area 1 Styles */
     .box-1-container {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 20px; /* Margin below the search bar */
+        margin-top: 5px; /* Further reduced margin */
     }
 
     .filter-area-1 {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%; /* Full width */
         display: flex;
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 10px; /* Space between buttons */
-        padding: 10px;
-        border: 1px solid transparent;
-        background-color: transparent;
-        border-radius: 15px;
-        justify-content: center; /* Center buttons horizontally */
+        flex-direction: column; /* Vertical layout for smaller screens */
+        gap: 4px; /* Further reduced space between buttons */
+        padding: 6px; /* Reduced padding */
     }
 
     .filter-area-1 .filter-button {
-        background-color: #007bff;
-        margin: 0; /* Remove any default margins */
-        width: 100%; /* Ensure buttons take full width of their container */
-        font-size: 14px; /* Reduced font size */
-    }
-
-    .filter-area-1 .filter-button:hover {
-        background-color: #0056b3;
+        width: 100%; /* Full width */
+        font-size: 12px; /* Smaller font size */
     }
 
     /* Main Content and Right Side Styles */
     .content-container {
-        width: 100%; /* Full width for smaller screens */
+        width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
         background-color: #e2e2e2;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        margin: 0; /* Remove margin */
-        overflow-y: auto; /* Enable vertical scrolling */
-        padding: 10px; /* Adjust padding */
+        border-radius: 10px; /* Adjusted border radius */
+        margin-right: 0; /* Removed margin for smaller screens */
+        padding: 6px; /* Further reduced padding */
     }
 
     .image-container {
-        width: 120px; /* Reduced width */
-        height: 120px; /* Reduced height */
-        margin: 10px;
+        width: 80px; /* Smaller width */
+        height: 80px; /* Smaller height */
+        margin: 4px; /* Further reduced margin */
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
     }
 
     .image-label {
-        font-size: 12px; /* Reduced font size */
-        padding: 4px;
+        font-size: 10px; /* Smaller font size */
+        padding: 1px; /* Further reduced padding */
+    }
+
+    /* Modal Window Styles */
+    .modal-content {
+        width: 85%; /* Full width with margin */
+        max-width: 250px; /* Smaller max width */
+        padding: 6px; /* Further reduced padding */
+    }
+
+    #modalImage {
+        max-width: 100%;
+        max-height: 50vh; /* Ensure image fits well on small screens */
+    }
+
+    .right-side {
+        width: 100%; /* Full width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px; /* Further reduced gap */
+    }
+
+    .selected-filter-box {
+        width: 100%; /* Full width */
     }
 
     .filter-area-2 {
         width: 100%; /* Full width */
         display: flex;
-        flex-direction: column; /* Vertical layout for buttons */
-        padding: 10px; /* Adjusted padding */
-        border: 1px solid #ccc;
-        background-color: #f9f9f9;
-        border-radius: 15px;
-        align-items: center; /* Center buttons vertically */
+        flex-direction: column;
+        padding: 6px; /* Further reduced padding */
     }
 
     .filter-area-2 .filter-button {
-        background-color: #28a745;
-        margin-bottom: 5px; /* Space between buttons */
-        text-align: center; /* Center text in buttons */
-        width: 100%; /* Ensure buttons take full width of their container */
-        font-size: 14px; /* Reduced font size */
-    }
-
-    .filter-area-2 .filter-button:hover {
-        background-color: #1e7e34;
-    }
-
-    .filter-clear-button {
-        width: 24px; /* Adjusted size */
-        height: 24px; /* Adjusted size */
-        font-size: 10px; /* Adjusted font size */
+        width: 100%; /* Full width */
+        margin-bottom: 4px; /* Further reduced margin */
+        font-size: 12px; /* Smaller font size */
     }
 
     .clear-all-button {
-        padding: 5px 10px; /* Adjusted padding */
-        font-size: 14px; /* Reduced font size */
+        padding: 4px;
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .content-item img {
+        width: 100%; /* Full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Custom Info and Heart Button Styles */
+    .custom-info {
+        display: block; /* Show custom info on smaller screens */
+        padding: 4px; /* Further reduced padding */
+    }
+
+    .heart-button,
+    .plus-button {
+        font-size: 18px; /* Adjusted font size */
+    }
+}
+
+/* Additional Media Query for Smaller Devices (Phones) */
+@media (max-width: 768px) {
+    .search-bar {
+        font-size: 10px; /* Smaller font size */
+        padding: 4px; /* Further reduced padding */
+    }
+
+    .filter-area-1,
+    .filter-area-2 {
+        padding: 4px; /* Further reduced padding */
+    }
+
+    .filter-button {
+        font-size: 10px; /* Smaller font size */
+    }
+
+    .content-container {
+        padding: 4px; /* Further reduced padding */
+    }
+
+    .image-container {
+        width: 60px; /* Smaller width for phones */
+        height: 60px; /* Smaller height for phones */
+    }
+
+    .image-label {
+        font-size: 8px; /* Smaller font size */
     }
 
     .modal-content {
-        width: 90%; /* Full width */
-        max-width: 500px; /* Maximum width */
-        padding: 15px; /* Adjusted padding */
+        max-width: 200px; /* Even smaller max width */
+        padding: 4px; /* Further reduced padding */
     }
 
     #modalImage {
-        max-width: 100%; /* Full width of modal */
-        max-height: 70vh; /* Limit height */
+        max-height: 40vh; /* Further limit image height */
     }
 
-    .custom-info {
-        font-size: 12px; /* Reduced font size */
+    .selected-filter-item {
+        font-size: 12px; /* Smaller font size */
     }
 
-    /* Responsive Image Container */
-    .image-container {
-        width: 120px; /* Adjust width */
-        height: 120px; /* Adjust height */
-        box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #CCC;
+    .filter-clear-button {
+        width: 16px; /* Smaller width */
+        height: 16px; /* Smaller height */
+        font-size: 8px; /* Smaller font size */
     }
 
+    .clear-all-button {
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .heart-button,
     .plus-button {
-        width: 25px; /* Adjusted size */
-        height: 25px; /* Adjusted size */
-        font-size: 16px; /* Adjusted font size */
-    }
-
-    /* Adjust Modal Styles */
-    .modal-close-button {
-        font-size: 18px; /* Adjusted font size */
+        font-size: 16px; /* Smaller font size */
     }
 }
