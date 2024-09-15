@@ -73,18 +73,18 @@ body {
 
     .search-container {
         width: 100%; /* Full width */
-        margin: 5px 0; /* Minimal margin */
+        margin: 2px 0; /* Minimal margin */
     }
 
     .search-bar {
         width: 100%; /* Full width */
-        padding: 5px; /* Minimal padding */
-        font-size: 12px; /* Small font size */
+        padding: 2px; /* Very minimal padding */
+        font-size: 10px; /* Very small font size */
     }
 
     .search-label {
-        font-size: 14px; /* Slightly larger font size for visibility */
-        margin: 5px 0; /* Margin above and below */
+        font-size: 12px; /* Slightly larger font size for visibility */
+        margin: 2px 0; /* Minimal margin above and below */
     }
 
     .box-1-container,
@@ -98,22 +98,22 @@ body {
     .filter-button {
         width: 100%; /* Full width */
         padding: 2px; /* Very minimal padding */
-        font-size: 8px; /* Very small font size */
+        font-size: 6px; /* Very small font size */
     }
 
     .content-container {
         width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
         padding: 2px; /* Very minimal padding */
-        margin: 5px 0; /* Minimal margin */
+        margin: 2px 0; /* Minimal margin */
         background-color: #e2e2e2;
-        border-radius: 3px; /* Very small border radius */
+        border-radius: 2px; /* Very small border radius */
         overflow-y: auto; /* Enable vertical scrolling if needed */
     }
 
     .image-container {
-        width: 20px; /* Very small size */
-        height: 20px;
+        width: 15px; /* Very small size */
+        height: 15px;
         margin: 1px; /* Very minimal margin */
         display: flex;
         align-items: center;
@@ -135,17 +135,17 @@ body {
     .clear-all-button {
         padding: 1px; /* Very minimal padding */
         font-size: 6px; /* Very small font size */
-        width: 10px; /* Very small button */
-        height: 10px;
+        width: 12px; /* Very small button */
+        height: 12px;
     }
 
     .modal-content {
         width: 80%; /* Adjust width */
-        max-width: 150px; /* Maximum width for modal */
+        max-width: 120px; /* Maximum width for modal */
     }
 
     .modal-close-button {
-        font-size: 8px; /* Small font size */
+        font-size: 6px; /* Very small font size */
     }
 }
 /* Mobile Landscape Devices (min-width: 376px and max-width: 767px) */
@@ -155,13 +155,13 @@ body {
     }
 
     .search-bar {
-        padding: 5px; /* Minimal padding */
-        font-size: 12px; /* Small font size */
+        padding: 4px; /* Minimal padding */
+        font-size: 10px; /* Small font size */
     }
 
     .search-label {
-        font-size: 14px; /* Slightly larger font size for visibility */
-        margin: 5px 0; /* Margin above and below */
+        font-size: 12px; /* Slightly larger font size for visibility */
+        margin: 4px 0; /* Minimal margin above and below */
     }
 
     .filter-area-1,
@@ -173,13 +173,13 @@ body {
     .filter-button {
         width: 100%; /* Full width */
         padding: 2px; /* Very minimal padding */
-        font-size: 8px; /* Very small font size */
+        font-size: 6px; /* Very small font size */
     }
 
     .image-container {
-        width: 30px; /* Small size */
-        height: 30px;
-        margin: 1px; /* Very minimal margin */
+        width: 20px; /* Small size */
+        height: 20px;
+        margin: 2px; /* Minimal margin */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -193,21 +193,22 @@ body {
 
     .image-label {
         font-size: 8px; /* Small font size */
-        padding: 1px; /* Minimal padding */
+        padding: 2px; /* Minimal padding */
         text-align: center; /* Center text */
     }
 
     .clear-all-button {
-        font-size: 10px; /* Small font size */
+        font-size: 8px; /* Small font size */
         width: 15px; /* Small button size */
         height: 15px;
     }
 
     .modal-content {
         width: 90%; /* Adjust width */
-        max-width: 200px; /* Maximum width for modal */
+        max-width: 180px; /* Maximum width for modal */
     }
 }
+
 
 
 
