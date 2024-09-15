@@ -277,9 +277,6 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.filter-button:hover {
-    /* Hover effects are handled individually for Box 1 and Box 2 */
-}
 
 .clear-all-button {
     padding: 5px 5px;
