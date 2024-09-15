@@ -21,7 +21,6 @@ body {
     margin-top: 20px; /* Space below Box 1 */
 }
 
-/* Tablet Devices (min-width: 768px) */
 @media (max-width: 1024px) {
     body {
         font-size: 15px;
@@ -53,6 +52,7 @@ body {
         width: 90%;
     }
 }
+/* Tablet Devices (min-width: 768px) */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -94,8 +94,8 @@ body {
     .container {
         flex-direction: column; /* Stack containers vertically */
         display: flex;
-        width: 600px;
-        height: 350px;
+        width: 300px;
+        height: 150px;
         margin-top: 20px; /* Space below Box 1 */
     }
 
