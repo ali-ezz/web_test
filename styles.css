@@ -739,38 +739,12 @@ body {
 
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
-    /* Box 2: Filter Area 2 Styles */
-.box-2-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center vertically */
-    margin-top: 5px;
-    overflow-x: auto; /* Allow horizontal scrolling */
-    gap: 2px; /* Reduced gap */
-    background-color: transparent; /* No background color for Box 2 */
-}
-
-.filter-area-2 {
-    display: flex;
-    flex-direction: row; /* Horizontal layout */
-    justify-content: center;
-    align-items: center; /* Center vertically */
-    gap: 2px; /* Reduced gap */
-    padding: 4px; /* Further reduced padding */
-    overflow-x: auto; /* Allow horizontal scrolling */
-    width: 100%; /* Full width for Box 2 */
-    background-color: transparent; /* No background color */
-}
-
-/* Center text in the container */
-.center-text {
-    width: 100%; /* Full width to ensure centering */
-    text-align: center; /* Center text horizontally */
-    font-size: 8px; /* Adjust font size if needed */
-    padding: 2px; /* Padding around the text */
-}
-
+    .heart-button,
+    .plus-button {
+        font-size: 16px; /* Smaller font size for tablets */
+        width: 24px; /* Smaller width */
+        height: 24px; /* Smaller height */
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -941,10 +915,16 @@ body {
         font-size: 6px; /* Smaller font size on hover */
         padding: 2px 2px; /* Further reduced padding on hover */
     }
-}
 
+}
 /* Additional Media Query for Smaller Devices (Phones) */
 @media (max-width: 768px) {
+    .heart-button,
+    .plus-button {
+        font-size: 14px; /* Even smaller font size for phones */
+        width: 20px; /* Smaller width */
+        height: 20px; /* Smaller height */
+    }
     /* Box 2: Filter Area 2 Styles */
 .box-2-container {
     width: 100%;
@@ -988,7 +968,7 @@ body {
 
     .filter-area-1 .filter-button {
         font-size: 6px; /* Smaller font size */
-        padding: 2px 2px; /* Further reduced padding */
+        padding: 4px 10px; /* Further reduced padding */
     }
 
     .filter-area-2 {
@@ -998,7 +978,7 @@ body {
 
     .filter-area-2 .filter-button {
         font-size: 6px; /* Same font size as Box 1 buttons */
-        padding: 2px 2px; /* Same padding as Box 1 buttons */
+        padding: 8px 10px; /* Same padding as Box 1 buttons */
     }
 
     .content-container {
@@ -1009,8 +989,8 @@ body {
     }
 
     .image-container {
-        width: 50px; /* Smaller image width */
-        height: 50px; /* Smaller image height */
+        width: 150px; /* Smaller image width */
+        height: 150px; /* Smaller image height */
     }
 
     .image-label {
@@ -1018,7 +998,7 @@ body {
     }
 
     .modal-content {
-        max-width: 180px; /* Smaller max width for modal */
+        max-width: 380px;/* Smaller max width for modal */
         padding: 2px; /* Further reduced padding */
     }
 
@@ -1031,8 +1011,8 @@ body {
     }
 
     .filter-clear-button {
-        width: 12px; /* Smaller button width */
-        height: 12px; /* Smaller button height */
+        width: 10px; /* Smaller button width */
+        height: 10px; /* Smaller button height */
         font-size: 4px; /* Smaller font size */
     }
 
