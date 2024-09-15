@@ -92,7 +92,6 @@ body {
 }
 @media (min-width: 576px) and (max-height: 500px) {
     .container {
-        flex-direction: column; /* Stack containers vertically */
         display: flex;
         width: 70px;
         height: 30px;
