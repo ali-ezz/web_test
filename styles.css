@@ -13,7 +13,124 @@ body {
     font-family: Arial, sans-serif;
     overflow: hidden;
 }
+@media (max-width: 480px) {
+    .search-bar {
+        font-size: 14px;
+    }
 
+    .filter-area-1, .filter-area-2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filter-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .image-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .selected-filter-box {
+        font-size: 14px;
+    }
+
+    .filter-clear-button {
+        width: 18px;
+        height: 18px;
+    }
+
+    .clear-all-button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .search-bar {
+        font-size: 15px;
+    }
+
+    .filter-area-1, .filter-area-2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filter-button {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .image-container img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .selected-filter-box {
+        font-size: 15px;
+    }
+
+    .filter-clear-button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .clear-all-button {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+}
+
+/* Laptops and Desktops (769px and up) */
+@media (min-width: 769px) {
+    .search-bar {
+        font-size: 16px;
+    }
+
+    .filter-area-1, .filter-area-2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .filter-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .image-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+
+    .selected-filter-box {
+        font-size: 16px;
+    }
+
+    .filter-clear-button {
+        width: 22px;
+        height: 22px;
+    }
+
+    .clear-all-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
 /* Search Bar Styles */
 .search-container {
     width: 100%;
