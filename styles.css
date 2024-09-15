@@ -23,8 +23,8 @@ body {
 
 @media screen and (max-width:500px) {
     .all-conatier{
-        width: 0px;
-        height: 0px;
+        width: 20%;
+        height: 20%;
     }
 }
 
