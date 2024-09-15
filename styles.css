@@ -70,7 +70,21 @@ body {
     height: 550px;
     margin-top: 20px; /* Space below Box 1 */
 }
+.image-container {
+    display: inline-block;
+    margin: 10px;
+}
 
+.image-container img {
+    cursor: pointer;
+    width: 150px;  /* Fixed width */
+    height: 150px; /* Fixed height */
+}
+
+.image-label {
+    text-align: center;
+    margin-top: 10px; /* Add margin between image and label */
+}
 .content-container {
     width: 75%;
     height: 90%; /* Use full height of the container */
@@ -82,7 +96,6 @@ body {
     overflow-y: auto; /* Enable vertical scrolling */
     padding: 20px; /* Add padding to content area */
 }
-
 /* Image Container Styles */
 .content-area {
     display: flex;
@@ -165,21 +178,6 @@ body {
     border-radius: 20px;
 }
 
-.image-container {
-    display: inline-block;
-    margin: 10px;
-}
-
-.image-container img {
-    cursor: pointer;
-    width: 150px;  /* Fixed width */
-    height: 150px; /* Fixed height */
-}
-
-.image-label {
-    text-align: center;
-    margin-top: 10px; /* Add margin between image and label */
-}
 
 
 .right-side {
@@ -305,32 +303,6 @@ body {
     border-radius: 10px; /* Optional: for rounded corners */
 }
 
-/* Me Box Styles */
-.me-box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    border-radius: 15px;
-}
-
-.me-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.me-button:hover {
-    background-color: #0056b3;
-}
-
 /* Add this to your existing CSS */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -433,4 +405,151 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
     justify-content: center;
     align-items: center;
+}
+
+/* Reset and Base Styles */
+
+/* Container for the image and label */
+.image-container {
+    position: relative;
+    width: 150px; /* Set desired width */
+    height: 150px; /* Set desired height */
+    overflow: hidden; /* Ensure images do not overflow the container */
+    border-radius: 10px; /* Default border-radius */
+    box-shadow: inset 0 0 0 4px #000, inset -4px -4px 0 6px #CCC;
+    background-color: #FFF;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-radius 0.3s ease 0.4s; /* Smooth scaling and delayed border-radius transition */
+}
+
+.image-container:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e;
+    border-radius: inherit; /* Inherit border-radius from the container */
+    transform-origin: 0 bottom 0;
+    transform: scaleY(0);
+    transition: .4s ease-out;
+}
+
+.image-container:hover:before {
+    transform: scaleY(1);
+}
+
+.image-container:hover {
+    border-radius: 20px; /* Active border-radius */
+}
+
+/* Image inside the container */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+
+/* Label container */
+.image-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e; /* Semi-transparent dark background */
+    color: white;
+    text-align: center;
+    padding: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions for transform and background-color */
+}
+
+.image-container:hover .image-label {
+    color: #FFF;
+    transform: translateY(-100%); /* Slide up the label */
+}
+
+/* New custom content container */
+.custom-info {
+    display: none; /* Hidden by default */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Light semi-transparent background */
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.image-container:hover .custom-info {
+    display: block; /* Show custom content */
+    transform: translateY(-100%); /* Slide up the custom content */
+}
+
+/* Post title styling */
+.post-title {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.333;
+    transition: .4s ease-out;
+}
+.image-container {
+    position: relative;
+}
+
+.heart-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.5s ease;
+}
+
+.image-container:hover .heart-button {
+    opacity: 1;
+}
+
+.heart-button.liked {
+    color: red;
+    transform: scale(1.2);
+}
+/* Style for the plus button */
+.plus-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #28a1a7; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 50%; /* Make it circular */
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    font-size: 20px; /* Set font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    transition: transform 0.2s ease, opacity 0.5s ease; /* Smooth transform and opacity transition */
+    opacity: 0; /* Initially hidden */
+}
+
+.image-container:hover .plus-button {
+    opacity: 1; /* Show button on hover */
+}
+
+.plus-button:hover {
+    background-color: #218884; /* Darker green on hover */
+    transform: scale(1.2); /* Scale up on hover */
 }
