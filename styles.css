@@ -23,7 +23,7 @@ body {
 }
 
 .search-bar {
-    width: 50%;
+    width: 90%;
     max-width: 800px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -34,14 +34,14 @@ body {
 
 /* Box 1: Filter Area 1 Styles */
 .box-1-container {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px; /* Margin below the search bar */
 }
 
 .filter-area-1 {
-    width: 80%; /* Smaller width for Box 1 */
+    width: 90%;
     display: flex;
     flex-direction: row; /* Horizontal layout for buttons */
     gap: 10px; /* Space between buttons */
@@ -66,10 +66,13 @@ body {
 /* Main Content and Right Side Styles */
 .container {
     display: flex;
-    width: 1200px;
-    height: 550px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
     margin-top: 20px; /* Space below Box 1 */
+    flex-direction: column;
 }
+
 .image-container {
     display: inline-block;
     margin: 10px;
@@ -77,17 +80,17 @@ body {
 
 .image-container img {
     cursor: pointer;
-    width: 150px;  /* Fixed width */
-    height: 150px; /* Fixed height */
+    width: 100%;
+    height: auto;
 }
 
 .image-label {
     text-align: center;
     margin-top: 10px; /* Add margin between image and label */
 }
+
 .content-container {
-    width: 75%;
-    height: 90%; /* Use full height of the container */
+    width: 100%;
     background-color: #e2e2e2;
     border-radius: 20px;
     display: flex;
@@ -96,6 +99,7 @@ body {
     overflow-y: auto; /* Enable vertical scrolling */
     padding: 20px; /* Add padding to content area */
 }
+
 /* Image Container Styles */
 .content-area {
     display: flex;
@@ -141,11 +145,10 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions for transform and background-color */
 }
 
-.image-container:hover {
-    transform: scale(1.05); /* Scale up label on hover */
+.image-container:hover .image-label {
+    transform: translateY(-100%); /* Slide up the label */
 }
 
-/* Modal Window Styles */
 /* Modal Window Styles */
 .modal {
     display: none; /* Hidden by default */
@@ -178,10 +181,8 @@ body {
     border-radius: 20px;
 }
 
-
-
 .right-side {
-    width: 25%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +246,7 @@ body {
 }
 
 .filter-area-2 {
-    width: 100%; /* Bigger width for Box 2 */
+    width: 100%;
     display: flex;
     flex-direction: column; /* Vertical layout for buttons */
     padding: 20px;
@@ -330,8 +331,8 @@ body {
 .content-image {
     object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
-/* Add this CSS to your existing stylesheet */
 
+/* Add this CSS to your existing stylesheet */
 /* Center text in the modal */
 #imageModal .modal-content {
     display: flex;
@@ -362,6 +363,8 @@ body {
     border: none;
     font-size: 20px;
     cursor: pointer;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -377,7 +380,6 @@ body {
     align-items: center;
 }
 
-
 #modalImage {
     display: block;
     margin: auto;
@@ -389,7 +391,6 @@ body {
     text-align: center;
     margin-top: 20px;
     color: white;
-}
 }
 
 /* Modal background */
@@ -408,7 +409,6 @@ body {
 }
 
 /* Reset and Base Styles */
-
 /* Container for the image and label */
 .image-container {
     position: relative;
@@ -501,6 +501,7 @@ body {
     line-height: 1.333;
     transition: .4s ease-out;
 }
+
 .image-container {
     position: relative;
 }
@@ -525,6 +526,7 @@ body {
     color: red;
     transform: scale(1.2);
 }
+
 /* Style for the plus button */
 .plus-button {
     position: absolute;
@@ -552,4 +554,78 @@ body {
 .plus-button:hover {
     background-color: #218884; /* Darker green on hover */
     transform: scale(1.2); /* Scale up on hover */
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .search-bar, .box-1-container, .filter-area-1, .container, .content-container, .right-side {
+        width: 100%;
+    }
+
+    .filter-area-1 {
+        flex-direction: column;
+    }
+
+    .content-container {
+        margin-right: 0;
+    }
+
+    .image-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .search-bar, .box-1-container, .filter-area-1, .container, .content-container, .right-side {
+        width: 100%;
+    }
+
+    .filter-area-1 {
+        flex-direction: row;
+    }
+
+    .content-container {
+        margin-right: 0;
+    }
+
+    .image-container {
+        width: 120px;
+        height: 120px;
+    }
+
+    .modal-content {
+        width: 80%;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+    .search-bar, .box-1-container, .filter-area-1, .container, .content-container, .right-side {
+        width: 100%;
+    }
+
+    .filter-area-1 {
+        flex-direction: row;
+    }
+
+    .content-container {
+        margin-right: 20px;
+    }
+
+    .image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .modal-content {
+        width: 60%;
+    }
 }
