@@ -553,3 +553,143 @@ body {
     background-color: #218884; /* Darker green on hover */
     transform: scale(1.2); /* Scale up on hover */
 }
+/* For extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        width: 90%; /* Adjust search bar width */
+    }
+
+    .box-1-container {
+        width: 100%; /* Full width for Box 1 */
+    }
+
+    .filter-area-1 {
+        width: 100%; /* Full width for filter buttons */
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .content-container {
+        width: 100%; /* Full width */
+        margin-right: 0;
+    }
+
+    .right-side {
+        width: 100%; /* Full width for the right side */
+    }
+
+    .filter-area-2 {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100px; /* Smaller images */
+        height: 100px;
+    }
+}
+
+/* For small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .search-bar {
+        width: 80%; /* Adjust search bar width */
+    }
+
+    .box-1-container {
+        width: 90%; /* Adjust width for Box 1 */
+    }
+
+    .filter-area-1 {
+        width: 90%; /* Adjust filter area width */
+        flex-direction: row; /* Horizontal button layout */
+    }
+
+    .container {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height */
+    }
+
+    .content-container {
+        width: 80%;
+    }
+
+    .right-side {
+        width: 100%; /* Full width */
+        margin-top: 20px;
+    }
+
+    .image-container {
+        width: 120px; /* Medium size images */
+        height: 120px;
+    }
+}
+
+/* For medium devices (landscape tablets and small desktops, 768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .search-bar {
+        width: 70%;
+    }
+
+    .box-1-container {
+        width: 80%;
+    }
+
+    .filter-area-1 {
+        width: 80%;
+        gap: 15px; /* Larger space between buttons */
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .content-container {
+        width: 70%;
+    }
+
+    .right-side {
+        width: 30%;
+    }
+
+    .image-container {
+        width: 130px; /* Slightly smaller images */
+        height: 130px;
+    }
+}
+
+/* For large devices (desktops, 992px and up) */
+@media only screen and (min-width: 993px) {
+    .search-bar {
+        width: 50%;
+    }
+
+    .box-1-container {
+        width: 50%;
+    }
+
+    .filter-area-1 {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .container {
+        width: 1200px;
+    }
+
+    .content-container {
+        width: 75%;
+    }
+
+    .right-side {
+        width: 25%;
+    }
+
+    .image-container {
+        width: 150px; /* Default image size */
+        height: 150px;
+    }
+}
