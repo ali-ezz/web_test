@@ -5,21 +5,16 @@
     padding: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-}
 /* Mobile Devices (Up to 480px) */
 @media (max-width: 480px) {
     body {
-        font-size: 14px; /* Adjust body font size */
-        padding: 10px; /* Add some padding to the body */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        overflow: auto;
     }
-
     .search-bar {
         font-size: 14px;
     }
@@ -44,7 +39,6 @@ body {
     }
 
     .selected-filter-box {
-        width: 100%; /* Full width on mobile */
         font-size: 14px;
     }
 
@@ -57,25 +51,10 @@ body {
         font-size: 14px;
         padding: 5px 10px;
     }
-
-    .content-area {
-        width: 90%; /* Adjusted width for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
-        margin-right: 0; /* Remove margin on mobile */
-    }
-
-    .filter-area-2 {
-        width: 100%; /* Full width on mobile */
-    }
 }
-
 /* Tablets (481px to 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-    body {
-        font-size: 15px; /* Adjust body font size */
-        padding: 20px; /* Add some padding to the body */
-    }
 
+@media (min-width: 481px) and (max-width: 768px) {
     .search-bar {
         font-size: 15px;
     }
@@ -100,7 +79,6 @@ body {
     }
 
     .selected-filter-box {
-        width: 90%; /* Wider on tablets */
         font-size: 15px;
     }
 
@@ -114,23 +92,18 @@ body {
         padding: 8px 15px;
     }
 
-    .content-area {
-        width: 85%; /* Adjusted width for medium screens */
-        padding: 15px; /* Adjust padding for medium screens */
-    }
-
-    .filter-area-2 {
-        width: 90%; /* Adjusted width for medium screens */
-    }
 }
-
 /* Laptops and Desktops (769px and up) */
 @media (min-width: 769px) {
     body {
-        font-size: 16px; /* Adjust body font size */
-        padding: 30px; /* Add some padding to the body */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
     }
-
+    
     .search-bar {
         font-size: 16px;
     }
@@ -155,7 +128,6 @@ body {
     }
 
     .selected-filter-box {
-        width: 80%; /* Default width for larger screens */
         font-size: 16px;
     }
 
@@ -168,17 +140,9 @@ body {
         font-size: 16px;
         padding: 10px 20px;
     }
-
-    .content-area {
-        width: 75%; /* Adjusted width for larger screens */
-        padding: 20px; /* Adjust padding for larger screens */
-        margin-right: 20px;
-    }
-
-    .filter-area-2 {
-        width: 80%; /* Default width for larger screens */
-    }
 }
+
+
 
 /* Search Bar Styles */
 .search-container {
