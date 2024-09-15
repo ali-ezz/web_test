@@ -567,6 +567,9 @@ body {
 }
 
 @media (max-width: 1024px) {
+    body {
+     overflow: auto;
+    }
     .container {
         display: flex;
         flex-direction: column; /* Stack elements vertically */
@@ -703,6 +706,9 @@ body {
 
 /* Additional Media Query for Smaller Devices (Phones) */
 @media (max-width: 768px) {
+    body {
+        overflow: auto;
+       }
     .search-bar {
         font-size: 10px; /* Smaller font size */
         padding: 4px; /* Reduced padding */
