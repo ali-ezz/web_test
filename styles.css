@@ -21,6 +21,9 @@ body {
     margin-top: 20px; /* Space below Box 1 */
 }
 
+
+
+
 /* Tablet Devices (min-width: 768px) */
 @media (max-width: 768px) {
     body {
@@ -75,8 +78,13 @@ body {
 
     .search-bar {
         width: 100%; /* Full width */
-        padding: 3px; /* Minimal padding */
-        font-size: 10px; /* Very small font size */
+        padding: 5px; /* Minimal padding */
+        font-size: 12px; /* Small font size */
+    }
+
+    .search-label {
+        font-size: 14px; /* Slightly larger font size for visibility */
+        margin: 5px 0; /* Margin above and below */
     }
 
     .box-1-container {
@@ -86,31 +94,31 @@ body {
 
     .filter-area-1 {
         width: 100%; /* Full width */
-        padding: 3px; /* Minimal padding */
+        padding: 2px; /* Very minimal padding */
         flex-direction: column; /* Stack buttons vertically */
-        gap: 3px; /* Very reduced space between buttons */
+        gap: 2px; /* Very reduced space between buttons */
     }
 
     .filter-area-1 .filter-button {
         width: 100%; /* Full width */
-        padding: 3px; /* Minimal padding */
-        font-size: 10px; /* Very small font size */
+        padding: 2px; /* Very minimal padding */
+        font-size: 8px; /* Very small font size */
     }
 
     .content-container {
         width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
-        padding: 3px; /* Minimal padding */
+        padding: 2px; /* Very minimal padding */
         margin: 5px 0; /* Minimal margin */
         background-color: #e2e2e2;
-        border-radius: 5px; /* Smaller border radius */
+        border-radius: 3px; /* Very small border radius */
         overflow-y: auto; /* Enable vertical scrolling if needed */
     }
 
     .image-container {
-        width: 40px; /* Smaller size */
-        height: 40px;
-        margin: 2px; /* Minimal margin */
+        width: 30px; /* Very small size */
+        height: 30px;
+        margin: 1px; /* Very minimal margin */
     }
 
     .image-container img {
@@ -119,54 +127,54 @@ body {
     }
 
     .image-label {
-        font-size: 8px; /* Very small font size */
-        padding: 2px; /* Minimal padding */
+        font-size: 6px; /* Very small font size */
+        padding: 1px; /* Minimal padding */
     }
 
     .right-side {
         width: 100%; /* Full width */
         margin: 5px 0; /* Minimal margin */
-        padding: 3px; /* Minimal padding */
+        padding: 2px; /* Very minimal padding */
     }
 
     .filter-area-2 {
         width: 100%; /* Full width */
-        padding: 3px; /* Minimal padding */
+        padding: 2px; /* Very minimal padding */
         flex-direction: column; /* Stack buttons vertically */
-        gap: 3px; /* Very reduced space between buttons */
+        gap: 2px; /* Very reduced space between buttons */
     }
 
     .filter-area-2 .filter-button {
         width: 100%; /* Full width */
-        padding: 3px; /* Minimal padding */
-        font-size: 10px; /* Very small font size */
+        padding: 2px; /* Very minimal padding */
+        font-size: 8px; /* Very small font size */
     }
 
     .selected-filter-box {
         width: 100%; /* Full width */
-        padding: 3px; /* Minimal padding */
+        padding: 2px; /* Very minimal padding */
         margin: 5px 0; /* Minimal margin */
     }
 
     .selected-filter-item {
-        font-size: 8px; /* Very small font size */
-        padding: 2px; /* Minimal padding */
+        font-size: 6px; /* Very small font size */
+        padding: 1px; /* Minimal padding */
     }
 
     .clear-all-button {
-        padding: 2px; /* Minimal padding */
-        font-size: 8px; /* Very small font size */
-        width: 15px; /* Very small button */
-        height: 15px;
+        padding: 1px; /* Very minimal padding */
+        font-size: 6px; /* Very small font size */
+        width: 10px; /* Very small button */
+        height: 10px;
     }
 
     .modal-content {
         width: 80%; /* Adjust width */
-        max-width: 200px; /* Maximum width for modal */
+        max-width: 150px; /* Maximum width for modal */
     }
 
     .modal-close-button {
-        font-size: 12px; /* Smaller font size */
+        font-size: 8px; /* Small font size */
     }
 }
 /* Mobile Landscape Devices (min-width: 376px and max-width: 767px) */
@@ -180,29 +188,34 @@ body {
         font-size: 12px; /* Small font size */
     }
 
+    .search-label {
+        font-size: 14px; /* Slightly larger font size for visibility */
+        margin: 5px 0; /* Margin above and below */
+    }
+
     .filter-area-1, 
     .filter-area-2 {
-        padding: 5px; /* Minimal padding */
+        padding: 2px; /* Very minimal padding */
     }
 
     .image-container {
-        width: 60px; /* Adjust size */
-        height: 60px;
+        width: 40px; /* Small size */
+        height: 40px;
     }
 
     .image-label {
-        font-size: 10px; /* Small font size */
+        font-size: 8px; /* Small font size */
     }
 
     .clear-all-button {
-        font-size: 12px; /* Small font size */
-        width: 20px; /* Small button size */
-        height: 20px;
+        font-size: 10px; /* Small font size */
+        width: 15px; /* Small button size */
+        height: 15px;
     }
 
     .modal-content {
         width: 90%; /* Adjust width */
-        max-width: 250px; /* Maximum width for modal */
+        max-width: 200px; /* Maximum width for modal */
     }
 }
 
