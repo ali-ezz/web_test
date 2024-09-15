@@ -572,6 +572,7 @@ body {
     }
 */
 
+
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
     body {
@@ -650,13 +651,12 @@ body {
 
     .filter-area-2 .filter-button {
         font-size: 16px; /* Larger font size for Box 2 buttons */
-        padding: 12px 24px; /* Increased padding for larger shape */
+        padding: 10px 20px; /* Increased padding for larger shape */
         background: none; /* Remove background */
         border: 2px solid #000; /* Border for visibility */
-        border-radius: 12px; /* Rounded corners */
+        border-radius: 8px; /* Rounded corners */
         color: #000; /* Text color */
         cursor: pointer; /* Pointer cursor on hover */
-        margin: 2px; /* Space around buttons */
     }
 
     .filter-area-2 .filter-button:hover {
@@ -713,10 +713,9 @@ body {
     }
 
     .selected-filter-box {
-        width: 60%; /* Made box smaller */
+        width: 70%; /* Made box smaller */
         margin: 0 auto; /* Center alignment */
         padding: 4px; /* Reduced padding */
-        font-size: 14px; /* Reduced font size for content */
     }
 
     .clear-all-button {
@@ -745,7 +744,6 @@ body {
         padding: 2px 6px; /* Reduced padding on hover */
     }
 }
-
 /* Additional Media Query for Smaller Devices (Phones) */
 @media (max-width: 768px) {
     .search-bar {
@@ -768,10 +766,10 @@ body {
 
     .filter-area-2 .filter-button {
         font-size: 18px; /* Larger font size for smaller devices */
-        padding: 12px 24px; /* Increased padding for larger shape */
+        padding: 10px 20px; /* Increased padding for larger shape */
         background: none; /* Remove background */
         border: 2px solid #000; /* Border for visibility */
-        border-radius: 12px; /* Rounded corners */
+        border-radius: 8px; /* Rounded corners */
     }
 
     .content-container {
