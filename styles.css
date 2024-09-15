@@ -21,12 +21,205 @@ body {
     margin-top: 20px; /* Space below Box 1 */
 }
 
-@media screen and (max-width:500px) {
-    .all-conatier{
-        width: 20%;
-        height: 20%;
+
+
+
+/* Tablet Devices (min-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column; /* Stack containers vertically */
+        display: flex;
+        width: 300px;
+        height: 150px;
+        margin-top: 20px; /* Space below Box 1 */
+    }
+
+    .content-container {
+        width: 100%;
+        height: auto; /* Allow height to adjust automatically */
+    }
+
+    .right-side {
+        width: 100%;
+        margin-top: 20px; /* Add space above */
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .filter-area-1,
+    .filter-area-2 {
+        width: 95%;
+    }
+
+    .image-container {
+        width: 120px;
+        height: 120px;
     }
 }
+
+/* General Styles for Mobile Devices (Smallest viewports first) */
+
+/* Very small mobile devices (320px and below) */
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 8px; /* Make everything very small */
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .search-bar {
+        font-size: 8px;
+        padding: 2px;
+    }
+
+    .filter-button {
+        font-size: 6px;
+        padding: 2px;
+    }
+
+    .image-container img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .clear-all-button {
+        font-size: 6px;
+    }
+}
+
+/* iPhone SE, 5S (320px - 375px) */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .search-bar {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .filter-button {
+        font-size: 8px;
+        padding: 4px;
+    }
+
+    .image-container img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .clear-all-button {
+        font-size: 8px;
+    }
+}
+
+/* iPhone 12, 14 Pro Max (376px - 430px) */
+@media only screen and (min-width: 376px) and (max-width: 430px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .search-bar {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .filter-button {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .image-container img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .clear-all-button {
+        font-size: 10px;
+    }
+}
+
+/* Larger mobile devices and small tablets (431px - 767px) */
+@media only screen and (min-width: 431px) and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .search-bar {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .filter-button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .image-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .clear-all-button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: row; /* Change layout for landscape */
+    }
+
+    .search-bar {
+        font-size: 10px;
+    }
+
+    .filter-button {
+        font-size: 8px;
+    }
+
+    .image-container img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .clear-all-button {
+        font-size: 8px;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* Search Bar Styles */
 .search-container {
@@ -55,7 +248,7 @@ body {
 }
 
 .filter-area-1 {
-    width: 80%; /* Smaller width for Box 1 */
+    width: 90%; /* Smaller width for Box 1 */
     display: flex;
     flex-direction: row; /* Horizontal layout for buttons */
     gap: 10px; /* Space between buttons */
@@ -211,7 +404,7 @@ body {
 .selected-filter-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Space between selected filter items */
+    gap: 0px; /* Space between selected filter items */
     justify-content: center; /* Center selected filter items */
 }
 
