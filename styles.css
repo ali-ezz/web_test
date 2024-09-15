@@ -572,7 +572,7 @@ body {
     }
 */
 
-
+/* Combined Media Query for Phone and Tablet Devices */
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
     body {
@@ -589,7 +589,7 @@ body {
 
     /* Search Bar Styles */
     .search-container {
-        width: 1000%;
+        width: 100%;
         display: flex;
         justify-content: center;
         margin-top: 5px;
@@ -632,7 +632,7 @@ body {
     .box-2-container {
         width: 100%;
         display: flex;
-        flex-direction: row; /* Horizontal layout */
+        flex-direction: row; /* Horizontal layout similar to Box 1 */
         justify-content: center;
         margin-top: 5px;
         overflow-x: auto; /* Allow horizontal scrolling */
@@ -650,17 +650,8 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 16px; /* Larger font size for Box 2 buttons */
-        padding: 10px 20px; /* Increased padding for larger shape */
-        background: none; /* Remove background */
-        border: 2px solid #000; /* Border for visibility */
-        border-radius: 8px; /* Rounded corners */
-        color: #000; /* Text color */
-        cursor: pointer; /* Pointer cursor on hover */
-    }
-
-    .filter-area-2 .filter-button:hover {
-        background: #f0f0f0; /* Background color on hover */
+        font-size: 12px; /* Same font size as Box 1 buttons */
+        padding: 4px 8px; /* Same padding as Box 1 buttons */
     }
 
     /* Main Content and Right Side Styles */
@@ -744,71 +735,200 @@ body {
         padding: 2px 6px; /* Reduced padding on hover */
     }
 }
-/* Additional Media Query for Smaller Devices (Phones) */
-@media (max-width: 768px) {
+
+
+/* Combined Media Query for Phone and Tablet Devices */
+@media (max-width: 1024px) {
+    /* Box 2: Filter Area 2 Styles */
+.box-2-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    margin-top: 5px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 2px; /* Reduced gap */
+    background-color: transparent; /* No background color for Box 2 */
+}
+
+.filter-area-2 {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    gap: 2px; /* Reduced gap */
+    padding: 4px; /* Further reduced padding */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    width: 100%; /* Full width for Box 2 */
+    background-color: transparent; /* No background color */
+}
+
+/* Center text in the container */
+.center-text {
+    width: 100%; /* Full width to ensure centering */
+    text-align: center; /* Center text horizontally */
+    font-size: 8px; /* Adjust font size if needed */
+    padding: 2px; /* Padding around the text */
+}
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    /* Search Bar Styles */
+    .search-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
     .search-bar {
+        width: 85%;
+        max-width: 500px;
+        padding: 4px; /* Further reduced padding */
         font-size: 10px; /* Smaller font size */
-        padding: 4px; /* Reduced padding */
+    }
+
+    /* Box 1: Filter Area 1 Styles */
+    .box-1-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row; /* Horizontal layout */
+        justify-content: center;
+        margin-top: 5px;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        gap: 2px; /* Reduced gap between buttons */
     }
 
     .filter-area-1 {
-        padding: 4px; /* Reduced padding */
+        display: flex;
+        flex-direction: row; /* Horizontal layout */
+        flex-wrap: nowrap;
+        gap: 2px; /* Reduced gap */
+        padding: 4px; /* Further reduced padding */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        width: 100%; /* Full width for Box 1 */
     }
 
     .filter-area-1 .filter-button {
-        font-size: 10px; /* Smaller font size */
-        padding: 4px 8px; /* Adjusted padding */
+        font-size: 8px; /* Smaller font size for Box 1 */
+        padding: 2px 4px; /* Reduced padding */
+    }
+
+    /* Box 2: Filter Area 2 Styles */
+    .box-2-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row; /* Horizontal layout */
+        justify-content: center;
+        margin-top: 5px;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        gap: 2px; /* Reduced gap */
+        background-color: transparent; /* No background color for Box 2 */
     }
 
     .filter-area-2 {
-        padding: 4px; /* Reduced padding */
+        display: flex;
+        flex-direction: row; /* Horizontal layout */
+        flex-wrap: nowrap;
+        gap: 2px; /* Reduced gap */
+        padding: 4px; /* Further reduced padding */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        width: 100%; /* Full width for Box 2 */
+        background-color: transparent; /* No background color */
     }
 
     .filter-area-2 .filter-button {
-        font-size: 18px; /* Larger font size for smaller devices */
-        padding: 10px 20px; /* Increased padding for larger shape */
-        background: none; /* Remove background */
-        border: 2px solid #000; /* Border for visibility */
-        border-radius: 8px; /* Rounded corners */
+        font-size: 8px; /* Same font size as Box 1 buttons */
+        padding: 2px 4px; /* Same padding as Box 1 buttons */
     }
 
+    /* Main Content and Right Side Styles */
     .content-container {
-        padding: 4px;
-        max-height: 40vh; /* Adjusted height for smaller devices */
-        overflow-y: auto; /* Ensure scrolling */
-        margin-bottom: 10px; /* Added margin to the bottom */
+        width: 100%;
+        max-height: 50vh; /* Adjusted height */
+        background-color: #e2e2e2;
+        border-radius: 10px;
+        margin-right: 0;
+        padding: 4px; /* Further reduced padding */
+        margin-bottom: 8px; /* Reduced margin to the bottom */
+        overflow-y: auto; /* Enable vertical scrolling */
     }
 
     .image-container {
-        width: 60px; /* Smaller image width */
-        height: 60px; /* Smaller image height */
+        width: 60px; /* Adjust image size */
+        height: 60px; /* Adjust image size */
+        margin: 2px; /* Reduced margin */
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
     }
 
     .image-label {
-        font-size: 8px; /* Smaller font size for labels */
+        font-size: 6px; /* Smaller font size for labels */
+        padding: 2px; /* Adjusted padding */
     }
 
+    /* Modal Window Styles */
     .modal-content {
+        width: 85%;
         max-width: 200px; /* Smaller max width for modal */
-        padding: 4px; /* Reduced padding */
+        padding: 4px; /* Further reduced padding */
+        overflow-y: auto; /* Allow scrolling in modal */
     }
 
     #modalImage {
-        max-height: 40vh; /* Limit image height */
+        max-width: 100%;
+        max-height: 50vh; /* Ensure image fits well */
     }
 
-    .selected-filter-item {
-        font-size: 12px; /* Smaller font size */
+    .right-side {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px; /* Reduced gap */
     }
 
-    .filter-clear-button {
-        width: 16px; /* Smaller button width */
-        height: 16px; /* Smaller button height */
-        font-size: 8px; /* Smaller font size */
+    .selected-filter-box {
+        width: 100%; /* Match width of Box 2 */
+        display: flex;
+        flex-direction: row; /* Horizontal layout similar to Box 2 */
+        justify-content: center;
+        padding: 4px; /* Further reduced padding */
+        background-color: #f0f0f0; /* Light background color for selected filter content */
+        border-radius: 10px; /* Rounded corners */
+        box-sizing: border-box; /* Ensure padding is included in width */
+        margin-bottom: 8px; /* Reduced space below the selected filter box */
+        flex-wrap: wrap; /* Allow wrapping of boxes */
+    }
+
+    .selected-filter-box .filter-button {
+        font-size: 6px; /* Smaller font size for selected filter box buttons */
+        padding: 2px 2px; /* Further reduced padding */
+        margin: 2px; /* Smaller margin between buttons */
     }
 
     .clear-all-button {
-        font-size: 12px; /* Smaller font size */
+        padding: 2px; /* Reduced padding */
+        font-size: 10px; /* Smaller font size */
+    }
+
+    .content-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .custom-info {
+        display: block;
+        padding: 2px; /* Reduced padding */
     }
 
     .heart-button,
@@ -818,7 +938,116 @@ body {
 
     /* Hover Button Styles */
     .filter-button:hover {
-        font-size: 8px; /* Smaller font size on hover */
-        padding: 2px 4px; /* Reduced padding on hover */
+        font-size: 6px; /* Smaller font size on hover */
+        padding: 2px 2px; /* Further reduced padding on hover */
+    }
+}
+
+/* Additional Media Query for Smaller Devices (Phones) */
+@media (max-width: 768px) {
+    /* Box 2: Filter Area 2 Styles */
+.box-2-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    margin-top: 5px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 2px; /* Reduced gap */
+    background-color: transparent; /* No background color for Box 2 */
+}
+
+.filter-area-2 {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    gap: 2px; /* Reduced gap */
+    padding: 4px; /* Further reduced padding */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    width: 100%; /* Full width for Box 2 */
+    background-color: transparent; /* No background color */
+}
+
+/* Center text in the container */
+.center-text {
+    width: 100%; /* Full width to ensure centering */
+    text-align: center; /* Center text horizontally */
+    font-size: 8px; /* Adjust font size if needed */
+    padding: 2px; /* Padding around the text */
+}
+
+    .search-bar {
+        font-size: 8px; /* Smaller font size */
+        padding: 2px; /* Further reduced padding */
+    }
+
+    .filter-area-1 {
+        padding: 2px; /* Further reduced padding */
+    }
+
+    .filter-area-1 .filter-button {
+        font-size: 6px; /* Smaller font size */
+        padding: 2px 2px; /* Further reduced padding */
+    }
+
+    .filter-area-2 {
+        padding: 2px; /* Further reduced padding */
+        background-color: transparent; /* No background color */
+    }
+
+    .filter-area-2 .filter-button {
+        font-size: 6px; /* Same font size as Box 1 buttons */
+        padding: 2px 2px; /* Same padding as Box 1 buttons */
+    }
+
+    .content-container {
+        padding: 2px; /* Further reduced padding */
+        max-height: 40vh; /* Adjusted height for smaller devices */
+        overflow-y: auto; /* Ensure scrolling */
+        margin-bottom: 8px; /* Reduced margin to the bottom */
+    }
+
+    .image-container {
+        width: 50px; /* Smaller image width */
+        height: 50px; /* Smaller image height */
+    }
+
+    .image-label {
+        font-size: 6px; /* Smaller font size for labels */
+    }
+
+    .modal-content {
+        max-width: 180px; /* Smaller max width for modal */
+        padding: 2px; /* Further reduced padding */
+    }
+
+    #modalImage {
+        max-height: 40vh; /* Limit image height */
+    }
+
+    .selected-filter-item {
+        font-size: 4px; /* Smaller font size */
+    }
+
+    .filter-clear-button {
+        width: 12px; /* Smaller button width */
+        height: 12px; /* Smaller button height */
+        font-size: 4px; /* Smaller font size */
+    }
+
+    .clear-all-button {
+        font-size: 8px; /* Smaller font size */
+    }
+
+    .heart-button,
+    .plus-button {
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    /* Hover Button Styles */
+    .filter-button:hover {
+        font-size: 4px; /* Smaller font size on hover */
+        padding: 2px 2px; /* Further reduced padding on hover */
     }
 }

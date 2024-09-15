@@ -391,7 +391,7 @@ function updateSelectedFilterBox() {
     selectedFilterBox.innerHTML = '';
 
     if (activeFilters.length === 0) {
-        selectedFilterBox.innerHTML = '<p style="font-size: 20px; left: 50px;"> ليس هناك اي مرشح مضاف</p>'; // No filters added message
+        selectedFilterBox.innerHTML = '<p style="font-size: 20px;padding: 5px;border-radius: 20px;border: 1px solid #000000;""> ليس هناك اي مرشح مضاف</p>'; // No filters added message
     } else {
         activeFilters.forEach(filterName => {
             const filterText = box1Filters[filterName] || filterName;
@@ -442,7 +442,7 @@ function updateBox2() {
 
     if (!isBox1FilterActive()) {
         // Display message when no Box 1 filter is selected
-        filterArea2.innerHTML = '<p style="font-size: 20px;">اختر من الاقسام من الاعلى</p>';
+        filterArea2.innerHTML = '<p style="font-size: 20px;padding: 5px;border-radius: 20px;border: 1px solid #000000;">اختر من الاقسام من الاعلى</p>';
     } else {
         // Find the active Box 1 filter
         const activeBox1Filter = activeFilters.find(filter => Object.keys(box1Filters).includes(filter));
