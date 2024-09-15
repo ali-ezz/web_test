@@ -736,7 +736,7 @@ body {
     }
 }
 
-
+@media (orientation: portrait) {
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
     .heart-button,
@@ -1028,5 +1028,27 @@ body {
     }
     .filter-button:hover {
         /* Hover effects are handled individually for Box 1 and Box 2 */
+    }
+}}
+@media (orientation: landscape) {
+    .container,
+    .search-container,
+    .search-bar,
+    .box-1-container,
+    .filter-area-1,
+    .filter-area-2,
+    .content-container,
+    .image-container,
+    .image-label,
+    .modal-content,
+    #modalImage,
+    .right-side,
+    .selected-filter-box,
+    .clear-all-button,
+    .content-item img,
+    .custom-info,
+    .heart-button,
+    .plus-button {
+        /* Ensure these elements have the same styles in landscape mode */
     }
 }
