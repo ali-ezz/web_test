@@ -87,19 +87,15 @@ body {
         margin: 5px 0; /* Margin above and below */
     }
 
-    .box-1-container {
-        width: 100%; /* Full width */
-        margin: 5px 0; /* Minimal margin */
-    }
-
-    .filter-area-1 {
+    .box-1-container,
+    .filter-area-1,
+    .filter-area-2,
+    .selected-filter-box {
         width: 100%; /* Full width */
         padding: 2px; /* Very minimal padding */
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 2px; /* Very reduced space between buttons */
     }
 
-    .filter-area-1 .filter-button {
+    .filter-button {
         width: 100%; /* Full width */
         padding: 2px; /* Very minimal padding */
         font-size: 8px; /* Very small font size */
@@ -116,49 +112,24 @@ body {
     }
 
     .image-container {
-        width: 30px; /* Very small size */
-        height: 30px;
+        width: 20px; /* Very small size */
+        height: 20px;
         margin: 1px; /* Very minimal margin */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .image-container img {
-        width: 100%;
-        height: 100%;
+        width: 100%; /* Full width of container */
+        height: 100%; /* Full height of container */
+        object-fit: cover; /* Ensure image covers container */
     }
 
     .image-label {
         font-size: 6px; /* Very small font size */
         padding: 1px; /* Minimal padding */
-    }
-
-    .right-side {
-        width: 100%; /* Full width */
-        margin: 5px 0; /* Minimal margin */
-        padding: 2px; /* Very minimal padding */
-    }
-
-    .filter-area-2 {
-        width: 100%; /* Full width */
-        padding: 2px; /* Very minimal padding */
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 2px; /* Very reduced space between buttons */
-    }
-
-    .filter-area-2 .filter-button {
-        width: 100%; /* Full width */
-        padding: 2px; /* Very minimal padding */
-        font-size: 8px; /* Very small font size */
-    }
-
-    .selected-filter-box {
-        width: 100%; /* Full width */
-        padding: 2px; /* Very minimal padding */
-        margin: 5px 0; /* Minimal margin */
-    }
-
-    .selected-filter-item {
-        font-size: 6px; /* Very small font size */
-        padding: 1px; /* Minimal padding */
+        text-align: center; /* Center text */
     }
 
     .clear-all-button {
@@ -193,18 +164,37 @@ body {
         margin: 5px 0; /* Margin above and below */
     }
 
-    .filter-area-1, 
-    .filter-area-2 {
+    .filter-area-1,
+    .filter-area-2,
+    .selected-filter-box {
         padding: 2px; /* Very minimal padding */
     }
 
+    .filter-button {
+        width: 100%; /* Full width */
+        padding: 2px; /* Very minimal padding */
+        font-size: 8px; /* Very small font size */
+    }
+
     .image-container {
-        width: 40px; /* Small size */
-        height: 40px;
+        width: 30px; /* Small size */
+        height: 30px;
+        margin: 1px; /* Very minimal margin */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-container img {
+        width: 100%; /* Full width of container */
+        height: 100%; /* Full height of container */
+        object-fit: cover; /* Ensure image covers container */
     }
 
     .image-label {
         font-size: 8px; /* Small font size */
+        padding: 1px; /* Minimal padding */
+        text-align: center; /* Center text */
     }
 
     .clear-all-button {
@@ -218,6 +208,7 @@ body {
         max-width: 200px; /* Maximum width for modal */
     }
 }
+
 
 
 
