@@ -563,7 +563,6 @@ body {
         width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
         margin-top: 5px; /* Reduced space */
-        overflow-y: auto; /* Allow vertical scrolling */
     }
 
     /* Search Bar Styles */
@@ -579,32 +578,30 @@ body {
         max-width: 500px; /* Reduced max width */
         padding: 6px; /* Reduced padding */
         font-size: 12px; /* Smaller font size */
-        overflow: hidden; /* Prevent overflow */
     }
 
     /* Box 1: Filter Area 1 Styles */
     .box-1-container {
         width: 100%;
         display: flex;
-        flex-direction: row; /* Horizontal layout */
         justify-content: center;
         margin-top: 5px; /* Reduced margin */
-        flex-wrap: wrap; /* Allow wrapping of buttons */
-        overflow-x: auto; /* Horizontal scrolling if needed */
+        overflow-x: auto; /* Allow horizontal scrolling */
     }
 
     .filter-area-1 {
-        width: auto; /* Allow width to adjust based on content */
         display: flex;
-        flex-direction: row; /* Horizontal layout */
+        flex-wrap: nowrap; /* Prevent wrapping */
         gap: 4px; /* Reduced space between buttons */
         padding: 6px; /* Reduced padding */
-        overflow-x: auto; /* Horizontal scrolling */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        width: 100%; /* Full width */
     }
 
     .filter-area-1 .filter-button {
-        font-size: 10px; /* Smaller font size */
-        padding: 4px; /* Reduced padding */
+        font-size: 12px; /* Smaller font size */
+        padding: 4px 8px; /* Smaller padding */
+        margin: 2px; /* Reduced margin */
     }
 
     /* Main Content and Right Side Styles */
@@ -653,7 +650,6 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 8px; /* Reduced gap */
-        overflow-y: auto; /* Allow vertical scrolling */
     }
 
     .selected-filter-box {
@@ -665,7 +661,6 @@ body {
         display: flex;
         flex-direction: column;
         padding: 6px; /* Reduced padding */
-        overflow-y: auto; /* Allow vertical scrolling */
     }
 
     .filter-area-2 .filter-button {
@@ -703,18 +698,19 @@ body {
         padding: 4px; /* Reduced padding */
     }
 
-    .filter-area-1,
-    .filter-area-2 {
+    .filter-area-1 {
         padding: 4px; /* Reduced padding */
     }
 
     .filter-button {
-        font-size: 8px; /* Smaller font size */
+        font-size: 10px; /* Smaller font size */
+        padding: 2px 6px; /* Smaller padding */
     }
 
     .content-container {
         padding: 4px; /* Reduced padding */
         max-height: 40vh; /* Shorter max height for smaller devices */
+        overflow-y: auto; /* Allow vertical scrolling */
     }
 
     .image-container {
@@ -736,7 +732,7 @@ body {
     }
 
     .selected-filter-item {
-        font-size: 10px; /* Smaller font size */
+        font-size: 12px; /* Smaller font size */
     }
 
     .filter-clear-button {
@@ -746,7 +742,7 @@ body {
     }
 
     .clear-all-button {
-        font-size: 10px; /* Smaller font size */
+        font-size: 12px; /* Smaller font size */
     }
 
     .heart-button,
