@@ -95,9 +95,12 @@ body {
         flex-direction: column; /* Stack containers vertically */
     }
 
-    .content-container {
-        width: 10%;
-        height: auto; /* Adjust height automatically */
+    .container {
+        flex-direction: column; /* Stack containers vertically */
+        display: flex;
+        width: 900px;
+        height: 650px;
+        margin-top: 20px; /* Space below Box 1 */
     }
 
     .right-side {
