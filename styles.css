@@ -63,8 +63,8 @@ body {
     .container {
         flex-direction: column; /* Stack containers vertically */
         display: flex;
-        width: 100px;
-        height: 50px;
+        width: 600px;
+        height: 350px;
         margin-top: 20px; /* Space below Box 1 */
     }
 
