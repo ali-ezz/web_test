@@ -94,7 +94,7 @@ body {
     .container {
         flex-direction: column; /* Stack containers vertically */
         display: flex;
-        width: 300px;
+        width: 100px;
         height: 150px;
         margin-top: 20px; /* Space below Box 1 */
     }
@@ -118,9 +118,6 @@ body {
         height: 100px;
     }
 }
-
-
-
 
 
 /* Search Bar Styles */
