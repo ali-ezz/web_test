@@ -60,66 +60,152 @@ body {
     }
 }
 
-/* Small Devices (phones, up to 600px) */
-@media (max-width: 600px) {
-    .container, .right-side, .content-container, .image-container, .filter-area-1, .filter-area-2, .selected-filter-box {
+/* Mobile Portrait Devices (max-width: 375px) */
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column; /* Stack containers vertically */
         width: 100%; /* Full width */
+        height: auto; /* Adjust height automatically */
     }
 
-    .search-bar, .filter-button, .image-container, .selected-filter-item {
-        font-size: 10px; /* Smaller font size */
-        padding: 2px; /* Minimal padding */
+    .search-container {
+        width: 100%; /* Full width */
+        margin: 5px 0; /* Minimal margin */
+    }
+
+    .search-bar {
+        width: 100%; /* Full width */
+        padding: 5px; /* Minimal padding */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .box-1-container {
+        width: 100%; /* Full width */
+        margin: 5px 0; /* Minimal margin */
+    }
+
+    .filter-area-1 {
+        width: 100%; /* Full width */
+        padding: 5px; /* Minimal padding */
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 5px; /* Reduced space between buttons */
+    }
+
+    .filter-area-1 .filter-button {
+        width: 100%; /* Full width */
+        padding: 5px; /* Minimal padding */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .content-container {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height automatically */
+        padding: 5px; /* Minimal padding */
+        margin: 5px 0; /* Minimal margin */
+        background-color: #e2e2e2;
+        border-radius: 10px;
+        overflow-y: auto; /* Enable vertical scrolling if needed */
+    }
+
+    .image-container {
+        width: 60px; /* Smaller size for mobile */
+        height: 60px;
         margin: 2px; /* Minimal margin */
     }
 
-    .search-container {
-        margin: 5px 0; /* Reduced margin */
+    .image-container img {
+        width: 100%;
+        height: 100%;
     }
 
-    .filter-area-1, .filter-area-2 {
-        padding: 2px; /* Minimal padding */
-    }
-
-    .clear-all-button {
+    .image-label {
         font-size: 10px; /* Smaller font size */
         padding: 2px; /* Minimal padding */
     }
 
-    .modal-content {
-        width: 90%; /* Adjust width */
-        max-width: 250px; /* Smaller max-width */
-    }
-}
-/* Extra Small Devices (phones, up to 480px) */
-@media (max-width: 480px) {
-    .container, .right-side, .content-container, .image-container, .filter-area-1, .filter-area-2, .selected-filter-box {
+    .right-side {
         width: 100%; /* Full width */
+        margin: 5px 0; /* Minimal margin */
+        padding: 5px; /* Minimal padding */
     }
 
-    .search-bar, .filter-button, .image-container, .selected-filter-item {
-        font-size: 8px; /* Much smaller font size */
-        padding: 1px; /* Minimal padding */
-        margin: 1px; /* Minimal margin */
+    .filter-area-2 {
+        width: 100%; /* Full width */
+        padding: 5px; /* Minimal padding */
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 5px; /* Reduced space between buttons */
     }
 
-    .search-container {
-        margin: 2px 0; /* Minimal margin */
+    .filter-area-2 .filter-button {
+        width: 100%; /* Full width */
+        padding: 5px; /* Minimal padding */
+        font-size: 12px; /* Smaller font size */
     }
 
-    .filter-area-1, .filter-area-2 {
-        padding: 1px; /* Minimal padding */
+    .selected-filter-box {
+        width: 100%; /* Full width */
+        padding: 5px; /* Minimal padding */
+        margin: 5px 0; /* Minimal margin */
+    }
+
+    .selected-filter-item {
+        font-size: 10px; /* Smaller font size */
+        padding: 2px; /* Minimal padding */
     }
 
     .clear-all-button {
-        font-size: 8px; /* Much smaller font size */
-        padding: 1px; /* Minimal padding */
+        padding: 3px; /* Minimal padding */
+        font-size: 10px; /* Smaller font size */
+        width: 20px; /* Smaller button */
+        height: 20px;
+    }
+
+    .modal-content {
+        width: 80%; /* Adjust width */
+        max-width: 280px; /* Maximum width for modal */
+    }
+
+    .modal-close-button {
+        font-size: 16px; /* Smaller font size */
+    }
+}
+/* Additional Styles for Mobile Landscape Devices (min-width: 376px and max-width: 767px) */
+@media (min-width: 376px) and (max-width: 767px) {
+    .container {
+        flex-direction: column; /* Stack containers vertically */
+    }
+
+    .search-bar {
+        padding: 8px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .filter-area-1, 
+    .filter-area-2 {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .image-container {
+        width: 80px; /* Adjust size */
+        height: 80px;
+    }
+
+    .image-label {
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .clear-all-button {
+        font-size: 14px; /* Adjust font size */
+        width: 30px; /* Adjust button size */
+        height: 30px;
     }
 
     .modal-content {
         width: 90%; /* Adjust width */
-        max-width: 200px; /* Smaller max-width */
+        max-width: 320px; /* Maximum width for modal */
     }
 }
+
 
 
 
