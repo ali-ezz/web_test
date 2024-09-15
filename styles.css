@@ -649,8 +649,8 @@ body {
     }
   
     .filter-area-2 .filter-button {
-      font-size: 20px; /* Larger font size for Box 2 buttons */
-      padding: 14px 28px; /* Increased padding for larger shape */
+      font-size: 24px; /* Larger font size for Box 2 buttons */
+      padding: 12px 24px; /* Keep the same padding for shape */
       background: none; /* Remove background */
       border: 2px solid #000; /* Border for visibility */
       border-radius: 8px; /* Rounded corners */
@@ -765,8 +765,8 @@ body {
     }
   
     .filter-area-2 .filter-button {
-      font-size: 22px; /* Larger font size for smaller devices */
-      padding: 14px 28px; /* Increased padding for larger shape */
+      font-size: 26px; /* Larger font size for smaller devices */
+      padding: 12px 24px; /* Keep the same padding for shape */
       background: none; /* Remove background */
       border: 2px solid #000; /* Border for visibility */
       border-radius: 8px; /* Rounded corners */
