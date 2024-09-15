@@ -24,85 +24,134 @@ body {
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+/* Tablet Devices (Landscape and Portrait, max-width: 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 12px;
+    }
+
     .container {
-        width: 100%; /* Full width container */
-        flex-direction: column; /* Stack containers vertically */
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+    }
+
+    .content-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-side {
+        width: 100%;
+        margin-top: 20px;
     }
 
     .search-bar {
-        width: 90%; /* Adjust search bar width */
-        font-size: 12px; /* Adjust font size */
+        width: 90%;
+        font-size: 14px;
     }
 
     .filter-area-1,
     .filter-area-2 {
-        width: 90%; /* Adjust width of filter areas */
-        flex-direction: column; /* Stack filters vertically */
+        width: 95%;
     }
 
-    .image-container {
-        width: 80px; /* Adjust image size */
-        height: 80px;
+    .filter-button {
+        font-size: 12px;
     }
 
-    .clear-all-button {
-        font-size: 12px; /* Adjust button font size */
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .container {
-        width: 80%; /* Adjust container width */
-        flex-direction: row; /* Align containers side by side */
-    }
-
-    .search-bar {
-        width: 60%; /* Adjust search bar width */
-        font-size: 16px; /* Adjust font size */
-    }
-
-    .filter-area-1,
-    .filter-area-2 {
-        width: 45%; /* Adjust width of filter areas */
-        flex-direction: column; /* Stack filters vertically */
-    }
-
-    .image-container {
-        width: 120px; /* Adjust image size */
-        height: 120px;
-    }
-
-    .clear-all-button {
-        font-size: 16px; /* Adjust button font size */
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        width: 90%; /* Adjust container width */
-        height: auto; /* Allow height to adjust automatically */
-        flex-direction: column; /* Stack containers vertically */
-    }
-
-    .search-bar {
-        width: 100%; /* Full width search bar */
-        font-size: 14px; /* Adjust font size */
-    }
-
-    .filter-area-1,
-    .filter-area-2 {
-        width: 100%; /* Full width filters */
-        flex-direction: row; /* Horizontal layout for filters */
-    }
-
-    .image-container {
-        width: 100px; /* Adjust image size */
+    .image-container img {
+        width: 100px;
         height: 100px;
     }
 
     .clear-all-button {
-        font-size: 14px; /* Adjust button font size */
+        font-size: 12px;
     }
 }
+/* Mobile Devices (Portrait, max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .content-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .search-bar {
+        width: 80%;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .filter-area-1,
+    .filter-area-2 {
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .filter-button {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .image-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .clear-all-button {
+        font-size: 10px;
+    }
+}
+/* Mobile Devices (Landscape, max-width: 768px) */
+@media (max-width: 768px) and (orientation: landscape) {
+    body {
+        font-size: 9px;
+    }
+
+    .container {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .content-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .search-bar {
+        width: 70%;
+        font-size: 9px;
+    }
+
+    .filter-area-1,
+    .filter-area-2 {
+        width: 80%;
+    }
+
+    .filter-button {
+        font-size: 8px;
+    }
+
+    .image-container img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .clear-all-button {
+        font-size: 8px;
+    }
+}
+
 
 
 
