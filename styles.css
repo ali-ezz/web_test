@@ -608,7 +608,7 @@ body {
     /* Main Content and Right Side Styles */
     .content-container {
         width: 100%; /* Full width */
-        height: auto; /* Adjust height automatically */
+        max-height: 50vh; /* Limit maximum height to 50% of viewport height */
         background-color: #e2e2e2;
         border-radius: 10px; /* Adjusted border radius */
         margin-right: 0; /* Removed margin */
@@ -712,6 +712,7 @@ body {
 
     .content-container {
         padding: 4px; /* Reduced padding */
+        max-height: 40vh; /* Shorter max height for smaller devices */
     }
 
     .image-container {
