@@ -61,8 +61,8 @@ body {
     .container {
         flex-direction: column; /* Stack containers vertically */
         display: flex;
-        width: 900px;
-        height: 650px;
+        width: 300px;
+        height: 150px;
         margin-top: 20px; /* Space below Box 1 */
     }
 
@@ -94,8 +94,8 @@ body {
     .container {
         flex-direction: column; /* Stack containers vertically */
         display: flex;
-        width: 100px;
-        height: 150px;
+        width: 20px;
+        height: 10px;
         margin-top: 20px; /* Space below Box 1 */
     }
 
