@@ -572,7 +572,6 @@ body {
     }
 */
 
-
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
     body {
@@ -650,8 +649,17 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 14px; /* Larger font size for Box 2 */
-        padding: 6px 12px; /* Increased padding */
+        font-size: 16px; /* Larger font size for Box 2 buttons */
+        padding: 10px 20px; /* Increased padding for larger shape */
+        background: none; /* Remove background */
+        border: 2px solid #000; /* Border for visibility */
+        border-radius: 8px; /* Rounded corners */
+        color: #000; /* Text color */
+        cursor: pointer; /* Pointer cursor on hover */
+    }
+
+    .filter-area-2 .filter-button:hover {
+        background: #f0f0f0; /* Background color on hover */
     }
 
     /* Main Content and Right Side Styles */
@@ -753,8 +761,8 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 12px; /* Larger font size for smaller devices */
-        padding: 4px 8px; /* Increased padding */
+        font-size: 14px; /* Larger font size for smaller devices */
+        padding: 6px 12px; /* Increased padding for larger shape */
     }
 
     .content-container {
