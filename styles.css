@@ -572,6 +572,7 @@ body {
     }
 */
 
+
 /* Combined Media Query for Phone and Tablet Devices */
 @media (max-width: 1024px) {
     body {
@@ -649,17 +650,8 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 16px; /* Larger font size for Box 2 buttons */
-        padding: 10px 20px; /* Increased padding for larger shape */
-        background: none; /* Remove background */
-        border: 2px solid #000; /* Border for visibility */
-        border-radius: 8px; /* Rounded corners */
-        color: #000; /* Text color */
-        cursor: pointer; /* Pointer cursor on hover */
-    }
-
-    .filter-area-2 .filter-button:hover {
-        background: #f0f0f0; /* Background color on hover */
+        font-size: 10px; /* Smaller font size for Box 2 */
+        padding: 4px 8px; /* Reduced padding */
     }
 
     /* Main Content and Right Side Styles */
@@ -675,9 +667,9 @@ body {
     }
 
     .image-container {
-        width: 80px; /* Adjust image size */
-        height: 80px; /* Adjust image size */
-        margin: 4px; /* Adjust margin */
+        width: 80px; /* Smaller image width */
+        height: 80px; /* Smaller image height */
+        margin: 4px; /* Reduced margin */
     }
 
     .image-container img {
@@ -686,8 +678,8 @@ body {
     }
 
     .image-label {
-        font-size: 12px; /* Adjust font size for labels */
-        padding: 2px; /* Adjust padding */
+        font-size: 12px; /* Increased font size for labels */
+        padding: 2px; /* Adjusted padding */
     }
 
     /* Modal Window Styles */
@@ -712,9 +704,8 @@ body {
     }
 
     .selected-filter-box {
-        width: 70%; /* Made box smaller */
+        width: 80%; /* Made box smaller */
         margin: 0 auto; /* Center alignment */
-        padding: 4px; /* Reduced padding */
     }
 
     .clear-all-button {
@@ -761,8 +752,8 @@ body {
     }
 
     .filter-area-2 .filter-button {
-        font-size: 14px; /* Larger font size for smaller devices */
-        padding: 6px 12px; /* Increased padding for larger shape */
+        font-size: 8px; /* Smaller font size */
+        padding: 2px 6px; /* Reduced padding */
     }
 
     .content-container {
@@ -815,5 +806,6 @@ body {
         padding: 2px 4px; /* Reduced padding on hover */
     }
 }
+
 
 
