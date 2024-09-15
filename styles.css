@@ -1026,8 +1026,5 @@ body {
     }
 
     /* Hover Button Styles */
-    .filter-button:hover {
-        font-size: 4px; /* Smaller font size on hover */
-        padding: 2px 2px; /* Further reduced padding on hover */
-    }
+
 }
