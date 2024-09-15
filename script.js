@@ -187,7 +187,6 @@ const contentItems = {
     { src: 'images/Problem Solving & Decision-Making Skills.jpeg', label: 'Problem Solving & Decision-Making Skills', customContent: '<h3>the course data</h3><br><h4>the code:GEN 317&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credit hours:3</h4><br><h4>Hours of lecture:2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hours of exercise/lab:0/0</h4><br><h3>Course description</h3><br><h4>This course focuses on enhancing problem-solving and decision-making abilities. Students will learn techniques for analyzing complex issues, evaluating options, and making informed decisions. Emphasis is placed on practical approaches, critical thinking, and applying structured methods to solve problems effectively in various scenarios</h4><br><h3>Pre-request Courses</h3><br><h3>no pre-request courses is required</h3>'}
 ]}
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const initialBox1Filter = activeFilters.find(filter => Object.keys(box1Filters).includes(filter));
     if (initialBox1Filter) {
