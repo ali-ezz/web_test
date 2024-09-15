@@ -958,8 +958,9 @@ body {
 }
 
     .search-bar {
+        margin: 5px;
         font-size: 8px; /* Smaller font size */
-        padding: 2px; /* Further reduced padding */
+        padding: 10px; /* Further reduced padding */
     }
 
     .filter-area-1 {
@@ -978,7 +979,7 @@ body {
 
     .filter-area-2 .filter-button {
         margin-top: 10px;
-        font-size: 10px; /* Same font size as Box 1 buttons */
+        font-size: 3px; /* Same font size as Box 1 buttons */
         padding: 8px 14px; /* Same padding as Box 1 buttons */
     }
 
