@@ -38,6 +38,22 @@ body {
 
     .content-container {
         width: 100%;
+        font-size: 14px; /* Reduce content text size */
+        padding: 10px;
+    }
+
+    .content-container p,
+    .content-container h1,
+    .content-container h2,
+    .content-container h3,
+    .content-container h4,
+    .content-container h5,
+    .content-container h6 {
+        font-size: 90%; /* Make headings and text smaller */
+    }
+
+    .content-container img {
+        width: 150px; /* Adjust image size in content */
         height: auto;
     }
 
@@ -60,15 +76,11 @@ body {
         font-size: 12px;
     }
 
-    .image-container img {
-        width: 100px;
-        height: 100px;
-    }
-
     .clear-all-button {
         font-size: 12px;
     }
 }
+
 /* Mobile Devices (Portrait, max-width: 768px) */
 @media (max-width: 768px) {
     body {
@@ -83,6 +95,22 @@ body {
 
     .content-container {
         width: 100%;
+        font-size: 12px; /* Further reduce text size for mobile */
+        padding: 8px;
+    }
+
+    .content-container p,
+    .content-container h1,
+    .content-container h2,
+    .content-container h3,
+    .content-container h4,
+    .content-container h5,
+    .content-container h6 {
+        font-size: 85%; /* Make headings and text even smaller */
+    }
+
+    .content-container img {
+        width: 120px; /* Adjust image size in content */
         height: auto;
     }
 
@@ -103,15 +131,11 @@ body {
         padding: 5px;
     }
 
-    .image-container img {
-        width: 80px;
-        height: 80px;
-    }
-
     .clear-all-button {
         font-size: 10px;
     }
 }
+
 /* Mobile Devices (Landscape, max-width: 768px) */
 @media (max-width: 768px) and (orientation: landscape) {
     body {
@@ -125,6 +149,22 @@ body {
 
     .content-container {
         width: 100%;
+        font-size: 10px; /* Smallest text size for landscape */
+        padding: 6px;
+    }
+
+    .content-container p,
+    .content-container h1,
+    .content-container h2,
+    .content-container h3,
+    .content-container h4,
+    .content-container h5,
+    .content-container h6 {
+        font-size: 80%; /* Smaller headings and text */
+    }
+
+    .content-container img {
+        width: 100px; /* Adjust image size in content */
         height: auto;
     }
 
@@ -142,15 +182,11 @@ body {
         font-size: 8px;
     }
 
-    .image-container img {
-        width: 60px;
-        height: 60px;
-    }
-
     .clear-all-button {
         font-size: 8px;
     }
 }
+
 
 
 
