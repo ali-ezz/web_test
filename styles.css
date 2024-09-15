@@ -75,8 +75,8 @@ body {
 
     .search-bar {
         width: 100%; /* Full width */
-        padding: 5px; /* Minimal padding */
-        font-size: 12px; /* Smaller font size */
+        padding: 3px; /* Minimal padding */
+        font-size: 10px; /* Very small font size */
     }
 
     .box-1-container {
@@ -86,30 +86,30 @@ body {
 
     .filter-area-1 {
         width: 100%; /* Full width */
-        padding: 5px; /* Minimal padding */
+        padding: 3px; /* Minimal padding */
         flex-direction: column; /* Stack buttons vertically */
-        gap: 5px; /* Reduced space between buttons */
+        gap: 3px; /* Very reduced space between buttons */
     }
 
     .filter-area-1 .filter-button {
         width: 100%; /* Full width */
-        padding: 5px; /* Minimal padding */
-        font-size: 12px; /* Smaller font size */
+        padding: 3px; /* Minimal padding */
+        font-size: 10px; /* Very small font size */
     }
 
     .content-container {
         width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
-        padding: 5px; /* Minimal padding */
+        padding: 3px; /* Minimal padding */
         margin: 5px 0; /* Minimal margin */
         background-color: #e2e2e2;
-        border-radius: 10px;
+        border-radius: 5px; /* Smaller border radius */
         overflow-y: auto; /* Enable vertical scrolling if needed */
     }
 
     .image-container {
-        width: 50px; /* Smaller size for mobile */
-        height: 50px;
+        width: 40px; /* Smaller size */
+        height: 40px;
         margin: 2px; /* Minimal margin */
     }
 
@@ -119,90 +119,90 @@ body {
     }
 
     .image-label {
-        font-size: 10px; /* Smaller font size */
+        font-size: 8px; /* Very small font size */
         padding: 2px; /* Minimal padding */
     }
 
     .right-side {
         width: 100%; /* Full width */
         margin: 5px 0; /* Minimal margin */
-        padding: 5px; /* Minimal padding */
+        padding: 3px; /* Minimal padding */
     }
 
     .filter-area-2 {
         width: 100%; /* Full width */
-        padding: 5px; /* Minimal padding */
+        padding: 3px; /* Minimal padding */
         flex-direction: column; /* Stack buttons vertically */
-        gap: 5px; /* Reduced space between buttons */
+        gap: 3px; /* Very reduced space between buttons */
     }
 
     .filter-area-2 .filter-button {
         width: 100%; /* Full width */
-        padding: 5px; /* Minimal padding */
-        font-size: 12px; /* Smaller font size */
+        padding: 3px; /* Minimal padding */
+        font-size: 10px; /* Very small font size */
     }
 
     .selected-filter-box {
         width: 100%; /* Full width */
-        padding: 5px; /* Minimal padding */
+        padding: 3px; /* Minimal padding */
         margin: 5px 0; /* Minimal margin */
     }
 
     .selected-filter-item {
-        font-size: 10px; /* Smaller font size */
+        font-size: 8px; /* Very small font size */
         padding: 2px; /* Minimal padding */
     }
 
     .clear-all-button {
-        padding: 3px; /* Minimal padding */
-        font-size: 10px; /* Smaller font size */
-        width: 20px; /* Smaller button */
-        height: 20px;
+        padding: 2px; /* Minimal padding */
+        font-size: 8px; /* Very small font size */
+        width: 15px; /* Very small button */
+        height: 15px;
     }
 
     .modal-content {
         width: 80%; /* Adjust width */
-        max-width: 280px; /* Maximum width for modal */
+        max-width: 200px; /* Maximum width for modal */
     }
 
     .modal-close-button {
-        font-size: 16px; /* Smaller font size */
+        font-size: 12px; /* Smaller font size */
     }
 }
-
-@media (min-width: 376px) and (max-width: 767px) {
+/* Mobile Landscape Devices (min-width: 376px and max-width: 767px) */
+@media (min-width: 376px) and (max-width: 767px) and (orientation: landscape) {
     .container {
         flex-direction: column; /* Stack containers vertically */
     }
 
     .search-bar {
-        padding: 8px; /* Adjust padding */
-        font-size: 14px; /* Adjust font size */
+        padding: 5px; /* Minimal padding */
+        font-size: 12px; /* Small font size */
     }
 
     .filter-area-1, 
     .filter-area-2 {
-        padding: 10px; /* Adjust padding */
+        padding: 5px; /* Minimal padding */
     }
 
     .image-container {
-        width: 80px; /* Adjust size */
-        height: 80px;
+        width: 60px; /* Adjust size */
+        height: 60px;
     }
 
     .image-label {
-        font-size: 12px; /* Adjust font size */
+        font-size: 10px; /* Small font size */
     }
 
     .clear-all-button {
-        font-size: 14px; /* Adjust font size */
-        width: 30px; /* Adjust button size */
-        height: 30px;
+        font-size: 12px; /* Small font size */
+        width: 20px; /* Small button size */
+        height: 20px;
     }
 
     .modal-content {
         width: 90%; /* Adjust width */
-        max-width: 320px; /* Maximum width for modal */
+        max-width: 250px; /* Maximum width for modal */
     }
 }
 
