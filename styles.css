@@ -11,8 +11,87 @@ body {
     align-items: center;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow-y: scroll; /* Enable vertical scroll on the page */
 }
+.content-container {
+    width: 75%;
+    height: 90%; /* Use full height of the container */
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    overflow-y: scroll; /* Enable vertical scroll inside the content area */
+    padding: 20px; /* Add padding to content area */
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content-container {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .filter-area-1 {
+        flex-wrap: wrap;
+    }
+
+    .filter-area-2 {
+        width: 90%;
+    }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 480px) {
+    .search-bar {
+        width: 90%;
+    }
+
+    .box-1-container {
+        width: 100%;
+    }
+
+    .content-container {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .filter-area-1 {
+        flex-wrap: wrap;
+    }
+
+    .filter-area-2 {
+        width: 100%;
+    }
+}
+
 
 /* Search Bar Styles */
 .search-container {
@@ -85,17 +164,7 @@ body {
     text-align: center;
     margin-top: 10px; /* Add margin between image and label */
 }
-.content-container {
-    width: 75%;
-    height: 90%; /* Use full height of the container */
-    background-color: #e2e2e2;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding: 20px; /* Add padding to content area */
-}
+
 /* Image Container Styles */
 .content-area {
     display: flex;
@@ -552,131 +621,4 @@ body {
 .plus-button:hover {
     background-color: #218884; /* Darker green on hover */
     transform: scale(1.2); /* Scale up on hover */
-}
-/* Small devices (phones, 600px and below) */
-@media (max-width: 600px) {
-    .search-container {
-        width: 100%;
-    }
-
-    .search-bar {
-        width: 90%; /* Adjust the width for mobile screens */
-    }
-
-    .box-1-container {
-        width: 100%; /* Full width on mobile */
-    }
-
-    .filter-area-1 {
-        flex-direction: column; /* Stack buttons vertically */
-        width: 90%;
-    }
-
-    .container {
-        flex-direction: column; /* Stack content vertically */
-        width: 100%; /* Full width */
-        height: auto; /* Auto height */
-        margin-top: 10px; /* Reduce margin */
-    }
-
-    .content-container {
-        width: 100%; /* Full width for content on mobile */
-        height: auto;
-        margin-right: 0;
-        padding: 10px;
-    }
-
-    .right-side {
-        width: 100%; /* Full width for the right side */
-        margin-top: 10px;
-        gap: 10px;
-    }
-
-    .image-container {
-        width: 120px; /* Smaller images on mobile */
-        height: 120px;
-    }
-
-    .filter-area-2 {
-        width: 100%; /* Full width for Filter Area 2 */
-    }
-
-    .filter-area-2 .filter-button {
-        width: 100%; /* Full width buttons */
-    }
-
-    .selected-filter-box {
-        width: 90%; /* Adjust selected filters box */
-    }
-
-    .modal-content {
-        width: 90%; /* Full width modal on mobile */
-        max-width: none;
-    }
-
-    /* Adjust the slider to fit the phone screen */
-    .slider {
-        width: 100%; /* Full width slider */
-        height: 300px; /* Adjust height */
-        overflow: hidden; /* Ensure it stays contained */
-    }
-
-    .slider img {
-        width: 100%; /* Ensure images scale to fit */
-        height: auto;
-    }
-}
-
-/* Medium devices (tablets, 600px - 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-    .search-bar {
-        width: 75%; /* Adjust width for tablets */
-    }
-
-    .box-1-container {
-        width: 75%;
-    }
-
-    .filter-area-1 {
-        width: 85%;
-        gap: 5px; /* Smaller gap between buttons */
-    }
-
-    .container {
-        width: 95%; /* Slightly smaller width */
-        height: auto;
-    }
-
-    .content-container {
-        width: 70%; /* Adjust for tablets */
-    }
-
-    .right-side {
-        width: 30%; /* Adjust width for right side */
-    }
-
-    .image-container {
-        width: 130px; /* Slightly smaller images */
-        height: 130px;
-    }
-}
-
-/* Large devices (desktops, 900px and above) */
-@media (min-width: 901px) {
-    .container {
-        width: 100%; /* Use full width on larger screens */
-    }
-
-    .content-container {
-        width: 75%;
-    }
-
-    .right-side {
-        width: 25%;
-    }
-
-    .image-container {
-        width: 150px; /* Default image size */
-        height: 150px;
-    }
 }
