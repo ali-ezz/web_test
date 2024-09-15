@@ -110,12 +110,12 @@ body {
 
     .filter-area-1,
     .filter-area-2 {
-        width: 100%;
+        width: 10%;
     }
 
     .image-container {
-        width: 100px;
-        height: 100px;
+        width: 10px;
+        height: 10px;
     }
 }
 
